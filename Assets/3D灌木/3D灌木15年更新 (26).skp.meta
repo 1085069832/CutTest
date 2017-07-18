@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: 0c2e26d4debade841ab365e6413398bc
+timeCreated: 1497501305
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 0aabe1b85301dfeda5f56b037eeed728
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -0.59322727, y: 0.51481575, z: -2.2753887}
+      lookAt: {x: -0.01525521, y: 0.30986217, z: -0.17556484}
+      up: {x: 0.024863718, y: 0.9956013, z: 0.090332106}
+      fov: 30
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: agave leaf
+    100004: agave leaf 1
+    100006: agave leaf 10
+    100008: agave leaf 11
+    100010: agave leaf 12
+    100012: agave leaf 13
+    100014: agave leaf 14
+    100016: agave leaf 15
+    100018: agave leaf 16
+    100020: agave leaf 17
+    100022: agave leaf 18
+    100024: agave leaf 19
+    100026: agave leaf 2
+    100028: agave leaf 20
+    100030: agave leaf 21
+    100032: agave leaf 3
+    100034: agave leaf 4
+    100036: agave leaf 5
+    100038: agave leaf 6
+    100040: agave leaf 7
+    100042: agave leaf 8
+    100044: agave leaf 9
+    100046: bunch
+    100048: bunch 1
+    100050: bunch 2
+    400000: //RootNode
+    400002: agave leaf
+    400004: agave leaf 1
+    400006: agave leaf 10
+    400008: agave leaf 11
+    400010: agave leaf 12
+    400012: agave leaf 13
+    400014: agave leaf 14
+    400016: agave leaf 15
+    400018: agave leaf 16
+    400020: agave leaf 17
+    400022: agave leaf 18
+    400024: agave leaf 19
+    400026: agave leaf 2
+    400028: agave leaf 20
+    400030: agave leaf 21
+    400032: agave leaf 3
+    400034: agave leaf 4
+    400036: agave leaf 5
+    400038: agave leaf 6
+    400040: agave leaf 7
+    400042: agave leaf 8
+    400044: agave leaf 9
+    400046: bunch
+    400048: bunch 1
+    400050: bunch 2
+    2300000: agave leaf
+    2300002: agave leaf 1
+    2300004: agave leaf 10
+    2300006: agave leaf 11
+    2300008: agave leaf 12
+    2300010: agave leaf 13
+    2300012: agave leaf 14
+    2300014: agave leaf 15
+    2300016: agave leaf 16
+    2300018: agave leaf 17
+    2300020: agave leaf 18
+    2300022: agave leaf 19
+    2300024: agave leaf 2
+    2300026: agave leaf 20
+    2300028: agave leaf 21
+    2300030: agave leaf 3
+    2300032: agave leaf 4
+    2300034: agave leaf 5
+    2300036: agave leaf 6
+    2300038: agave leaf 7
+    2300040: agave leaf 8
+    2300042: agave leaf 9
+    3300000: agave leaf
+    3300002: agave leaf 1
+    3300004: agave leaf 10
+    3300006: agave leaf 11
+    3300008: agave leaf 12
+    3300010: agave leaf 13
+    3300012: agave leaf 14
+    3300014: agave leaf 15
+    3300016: agave leaf 16
+    3300018: agave leaf 17
+    3300020: agave leaf 18
+    3300022: agave leaf 19
+    3300024: agave leaf 2
+    3300026: agave leaf 20
+    3300028: agave leaf 21
+    3300030: agave leaf 3
+    3300032: agave leaf 4
+    3300034: agave leaf 5
+    3300036: agave leaf 6
+    3300038: agave leaf 7
+    3300040: agave leaf 8
+    3300042: agave leaf 9
+    4300000: Mesh agave leaf
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

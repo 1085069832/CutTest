@@ -9,6 +9,9 @@ public class CutObject : MonoBehaviour
     KnifeDirector knifeDirector;
     bool isCollider;
     GameObject[] newGameObjects;
+    [SerializeField] Rigidbody rg;
+    [SerializeField] HingeJoint hj;
+
     /// <summary>
     /// 截取
     /// </summary>
@@ -18,13 +21,23 @@ public class CutObject : MonoBehaviour
     {
         obj.GetComponent<ShatterTool>().Split(new Plane[] { plane }, out newGameObjects);
         print("newGameObjects" + newGameObjects.Length);
+        AddJoint();
     }
 
-    private void FixedUpdate() 
+    private void AddJoint()
+    {
+        foreach (GameObject newObject in newGameObjects)
+        {
+            FixedJoint fj = newObject.AddComponent<FixedJoint>();
+            fj.connectedBody = rg;
+        }
+    }
+
+    private void FixedUpdate()
     {
         if (isCollider && knifeDirector.IsCanCut)
         {
-            Plane plane = new Plane(enterPos, knife.transform.parent.GetChild(0).position, knife.transform.position);
+            Plane plane = new Plane(knife.transform.up, enterPos);
             DoCut(gameObject, plane);
             knifeDirector.IsCanCut = false;
             isCollider = false;

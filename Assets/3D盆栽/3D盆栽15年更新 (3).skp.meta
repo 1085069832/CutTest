@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: b6a5293d6fdc55045a2305c346edee33
+timeCreated: 1497501429
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f00000010000000110000001200000013000000140000001500000016000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 43e148321ef51369f8f7053d9fef3ee5
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 0.31025752, y: 0.19568309, z: -0.81205887}
+      lookAt: {x: -0.06672601, y: 0.28890774, z: 0.18115273}
+      up: {x: 0.031020792, y: 0.9961718, z: -0.08172827}
+      fov: 45.309624
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cactus
+    100004: Cactus 1
+    100006: Cactus 2
+    100008: Cactus 3
+    100010: Catus Flower
+    100012: Catus Flower 1
+    100014: Group 11
+    100016: Group 13
+    100018: Group 5
+    100020: Group 7
+    100022: Pot_Half
+    400000: //RootNode
+    400002: Cactus
+    400004: Cactus 1
+    400006: Cactus 2
+    400008: Cactus 3
+    400010: Catus Flower
+    400012: Catus Flower 1
+    400014: Group 11
+    400016: Group 13
+    400018: Group 5
+    400020: Group 7
+    400022: Pot_Half
+    2300000: Cactus
+    2300002: Cactus 1
+    2300004: Cactus 2
+    2300006: Cactus 3
+    2300008: Catus Flower
+    2300010: Catus Flower 1
+    2300012: Group 11
+    2300014: Group 13
+    2300016: Group 5
+    2300018: Group 7
+    2300020: Pot_Half
+    3300000: Cactus
+    3300002: Cactus 1
+    3300004: Cactus 2
+    3300006: Cactus 3
+    3300008: Catus Flower
+    3300010: Catus Flower 1
+    3300012: Group 11
+    3300014: Group 13
+    3300016: Group 5
+    3300018: Group 7
+    3300020: Pot_Half
+    4300000: Mesh Cactus
+    4300002: Mesh Catus Flower
+    4300004: Mesh Group 5
+    4300006: Mesh Pot_Half
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

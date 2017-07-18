@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: c0344fc0f2cc09a46a8768640f0f0237
+timeCreated: 1497501432
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 3de60199895f68d58deeb48871636230
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -0.3617708, y: 0.6545181, z: -3.3665407}
+      lookAt: {x: 0.1592252, y: 0.84730613, z: -0.47914347}
+      up: {x: -0.0116426395, y: 0.9978482, z: -0.06452434}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Lg Bent Leaf
+    100004: Lg Bent Leaf 1
+    100006: Lg Bent Leaf 2
+    100008: Lg Broken Leaf
+    100010: Lg Broken Leaf 1
+    100012: Lg Leaf
+    100014: Lg Leaf 1
+    100016: Sm Bent Leaf
+    100018: Sm Bent Leaf 1
+    100020: Sm Broken Leaf
+    100022: Sm Leaf
+    100024: Sm Leaf 1
+    100026: Sm Leaf 2
+    100028: Sm Leaf 3
+    100030: tail
+    400000: //RootNode
+    400002: Lg Bent Leaf
+    400004: Lg Bent Leaf 1
+    400006: Lg Bent Leaf 2
+    400008: Lg Broken Leaf
+    400010: Lg Broken Leaf 1
+    400012: Lg Leaf
+    400014: Lg Leaf 1
+    400016: Sm Bent Leaf
+    400018: Sm Bent Leaf 1
+    400020: Sm Broken Leaf
+    400022: Sm Leaf
+    400024: Sm Leaf 1
+    400026: Sm Leaf 2
+    400028: Sm Leaf 3
+    400030: tail
+    2300000: Lg Bent Leaf
+    2300002: Lg Bent Leaf 1
+    2300004: Lg Bent Leaf 2
+    2300006: Lg Broken Leaf
+    2300008: Lg Broken Leaf 1
+    2300010: Lg Leaf
+    2300012: Lg Leaf 1
+    2300014: Sm Bent Leaf
+    2300016: Sm Bent Leaf 1
+    2300018: Sm Broken Leaf
+    2300020: Sm Leaf
+    2300022: Sm Leaf 1
+    2300024: Sm Leaf 2
+    2300026: Sm Leaf 3
+    2300028: tail
+    3300000: Lg Bent Leaf
+    3300002: Lg Bent Leaf 1
+    3300004: Lg Bent Leaf 2
+    3300006: Lg Broken Leaf
+    3300008: Lg Broken Leaf 1
+    3300010: Lg Leaf
+    3300012: Lg Leaf 1
+    3300014: Sm Bent Leaf
+    3300016: Sm Bent Leaf 1
+    3300018: Sm Broken Leaf
+    3300020: Sm Leaf
+    3300022: Sm Leaf 1
+    3300024: Sm Leaf 2
+    3300026: Sm Leaf 3
+    3300028: tail
+    4300000: Mesh Sm Leaf
+    4300002: Mesh Lg Broken Leaf
+    4300004: Mesh Lg Leaf
+    4300006: Mesh Sm Bent Leaf
+    4300008: Mesh Sm Broken Leaf
+    4300010: Mesh Lg Bent Leaf
+    4300012: Mesh Lg Broken Leaf
+    4300014: Mesh Lg Bent Leaf
+    4300016: Mesh Sm Bent Leaf
+    4300018: Mesh tail
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

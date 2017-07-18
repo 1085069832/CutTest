@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: c6a53bf69445daf458cf25d8d2d77f18
+timeCreated: 1497501433
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000
+  assetHash:
+    serializedVersion: 2
+    Hash: c7b5fd80949f6cc7672859526c593c88
+  longitude: -105.283
+  latitude: 40.017
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 1.3417808, y: 0.5204473, z: -1.227195}
+      lookAt: {x: 0.010273876, y: 0.3135086, z: -0.0036178678}
+      up: {x: -0.08371538, y: 0.9935158, z: 0.07692955}
+      fov: 45
+      aspectRatio: 0
+      orthoSize: 35.08705
+      isPerspective: 0
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Fatsia-3
+    100004: Fatsia-3 1
+    100006: Fatsia-3 2
+    100008: Fatsia-3 3
+    100010: Fatsia-3 4
+    100012: Fatsia-3 5
+    100014: Fatsia-3 6
+    100016: Fatsia-3 7
+    100018: Fatsia-3 8
+    100020: Leaf-Fatsia-02
+    100022: Leaf-Fatsia-02 1
+    100024: Leaf-Fatsia-02 10
+    100026: Leaf-Fatsia-02 11
+    100028: Leaf-Fatsia-02 12
+    100030: Leaf-Fatsia-02 13
+    100032: Leaf-Fatsia-02 14
+    100034: Leaf-Fatsia-02 15
+    100036: Leaf-Fatsia-02 16
+    100038: Leaf-Fatsia-02 17
+    100040: Leaf-Fatsia-02 18
+    100042: Leaf-Fatsia-02 19
+    100044: Leaf-Fatsia-02 2
+    100046: Leaf-Fatsia-02 20
+    100048: Leaf-Fatsia-02 21
+    100050: Leaf-Fatsia-02 22
+    100052: Leaf-Fatsia-02 23
+    100054: Leaf-Fatsia-02 24
+    100056: Leaf-Fatsia-02 25
+    100058: Leaf-Fatsia-02 26
+    100060: Leaf-Fatsia-02 3
+    100062: Leaf-Fatsia-02 4
+    100064: Leaf-Fatsia-02 5
+    100066: Leaf-Fatsia-02 6
+    100068: Leaf-Fatsia-02 7
+    100070: Leaf-Fatsia-02 8
+    100072: Leaf-Fatsia-02 9
+    100074: Leaf-Fatsia-03
+    100076: Leaf-Fatsia-03 1
+    100078: Leaf-Fatsia-03 10
+    100080: Leaf-Fatsia-03 11
+    100082: Leaf-Fatsia-03 12
+    100084: Leaf-Fatsia-03 13
+    100086: Leaf-Fatsia-03 14
+    100088: Leaf-Fatsia-03 15
+    100090: Leaf-Fatsia-03 16
+    100092: Leaf-Fatsia-03 17
+    100094: Leaf-Fatsia-03 18
+    100096: Leaf-Fatsia-03 19
+    100098: Leaf-Fatsia-03 2
+    100100: Leaf-Fatsia-03 20
+    100102: Leaf-Fatsia-03 21
+    100104: Leaf-Fatsia-03 22
+    100106: Leaf-Fatsia-03 23
+    100108: Leaf-Fatsia-03 24
+    100110: Leaf-Fatsia-03 25
+    100112: Leaf-Fatsia-03 26
+    100114: Leaf-Fatsia-03 3
+    100116: Leaf-Fatsia-03 4
+    100118: Leaf-Fatsia-03 5
+    100120: Leaf-Fatsia-03 6
+    100122: Leaf-Fatsia-03 7
+    100124: Leaf-Fatsia-03 8
+    100126: Leaf-Fatsia-03 9
+    100128: Leaf-Fatsia-04
+    100130: Leaf-Fatsia-04 1
+    100132: Leaf-Fatsia-04 2
+    400000: //RootNode
+    400002: Fatsia-3
+    400004: Fatsia-3 1
+    400006: Fatsia-3 2
+    400008: Fatsia-3 3
+    400010: Fatsia-3 4
+    400012: Fatsia-3 5
+    400014: Fatsia-3 6
+    400016: Fatsia-3 7
+    400018: Fatsia-3 8
+    400020: Leaf-Fatsia-02
+    400022: Leaf-Fatsia-02 1
+    400024: Leaf-Fatsia-02 10
+    400026: Leaf-Fatsia-02 11
+    400028: Leaf-Fatsia-02 12
+    400030: Leaf-Fatsia-02 13
+    400032: Leaf-Fatsia-02 14
+    400034: Leaf-Fatsia-02 15
+    400036: Leaf-Fatsia-02 16
+    400038: Leaf-Fatsia-02 17
+    400040: Leaf-Fatsia-02 18
+    400042: Leaf-Fatsia-02 19
+    400044: Leaf-Fatsia-02 2
+    400046: Leaf-Fatsia-02 20
+    400048: Leaf-Fatsia-02 21
+    400050: Leaf-Fatsia-02 22
+    400052: Leaf-Fatsia-02 23
+    400054: Leaf-Fatsia-02 24
+    400056: Leaf-Fatsia-02 25
+    400058: Leaf-Fatsia-02 26
+    400060: Leaf-Fatsia-02 3
+    400062: Leaf-Fatsia-02 4
+    400064: Leaf-Fatsia-02 5
+    400066: Leaf-Fatsia-02 6
+    400068: Leaf-Fatsia-02 7
+    400070: Leaf-Fatsia-02 8
+    400072: Leaf-Fatsia-02 9
+    400074: Leaf-Fatsia-03
+    400076: Leaf-Fatsia-03 1
+    400078: Leaf-Fatsia-03 10
+    400080: Leaf-Fatsia-03 11
+    400082: Leaf-Fatsia-03 12
+    400084: Leaf-Fatsia-03 13
+    400086: Leaf-Fatsia-03 14
+    400088: Leaf-Fatsia-03 15
+    400090: Leaf-Fatsia-03 16
+    400092: Leaf-Fatsia-03 17
+    400094: Leaf-Fatsia-03 18
+    400096: Leaf-Fatsia-03 19
+    400098: Leaf-Fatsia-03 2
+    400100: Leaf-Fatsia-03 20
+    400102: Leaf-Fatsia-03 21
+    400104: Leaf-Fatsia-03 22
+    400106: Leaf-Fatsia-03 23
+    400108: Leaf-Fatsia-03 24
+    400110: Leaf-Fatsia-03 25
+    400112: Leaf-Fatsia-03 26
+    400114: Leaf-Fatsia-03 3
+    400116: Leaf-Fatsia-03 4
+    400118: Leaf-Fatsia-03 5
+    400120: Leaf-Fatsia-03 6
+    400122: Leaf-Fatsia-03 7
+    400124: Leaf-Fatsia-03 8
+    400126: Leaf-Fatsia-03 9
+    400128: Leaf-Fatsia-04
+    400130: Leaf-Fatsia-04 1
+    400132: Leaf-Fatsia-04 2
+    2300000: Leaf-Fatsia-02
+    2300002: Leaf-Fatsia-02 1
+    2300004: Leaf-Fatsia-02 10
+    2300006: Leaf-Fatsia-02 11
+    2300008: Leaf-Fatsia-02 12
+    2300010: Leaf-Fatsia-02 13
+    2300012: Leaf-Fatsia-02 14
+    2300014: Leaf-Fatsia-02 15
+    2300016: Leaf-Fatsia-02 16
+    2300018: Leaf-Fatsia-02 17
+    2300020: Leaf-Fatsia-02 18
+    2300022: Leaf-Fatsia-02 19
+    2300024: Leaf-Fatsia-02 2
+    2300026: Leaf-Fatsia-02 20
+    2300028: Leaf-Fatsia-02 21
+    2300030: Leaf-Fatsia-02 22
+    2300032: Leaf-Fatsia-02 23
+    2300034: Leaf-Fatsia-02 24
+    2300036: Leaf-Fatsia-02 25
+    2300038: Leaf-Fatsia-02 26
+    2300040: Leaf-Fatsia-02 3
+    2300042: Leaf-Fatsia-02 4
+    2300044: Leaf-Fatsia-02 5
+    2300046: Leaf-Fatsia-02 6
+    2300048: Leaf-Fatsia-02 7
+    2300050: Leaf-Fatsia-02 8
+    2300052: Leaf-Fatsia-02 9
+    2300054: Leaf-Fatsia-03
+    2300056: Leaf-Fatsia-03 1
+    2300058: Leaf-Fatsia-03 10
+    2300060: Leaf-Fatsia-03 11
+    2300062: Leaf-Fatsia-03 12
+    2300064: Leaf-Fatsia-03 13
+    2300066: Leaf-Fatsia-03 14
+    2300068: Leaf-Fatsia-03 15
+    2300070: Leaf-Fatsia-03 16
+    2300072: Leaf-Fatsia-03 17
+    2300074: Leaf-Fatsia-03 18
+    2300076: Leaf-Fatsia-03 19
+    2300078: Leaf-Fatsia-03 2
+    2300080: Leaf-Fatsia-03 20
+    2300082: Leaf-Fatsia-03 21
+    2300084: Leaf-Fatsia-03 22
+    2300086: Leaf-Fatsia-03 23
+    2300088: Leaf-Fatsia-03 24
+    2300090: Leaf-Fatsia-03 25
+    2300092: Leaf-Fatsia-03 26
+    2300094: Leaf-Fatsia-03 3
+    2300096: Leaf-Fatsia-03 4
+    2300098: Leaf-Fatsia-03 5
+    2300100: Leaf-Fatsia-03 6
+    2300102: Leaf-Fatsia-03 7
+    2300104: Leaf-Fatsia-03 8
+    2300106: Leaf-Fatsia-03 9
+    3300000: Leaf-Fatsia-02
+    3300002: Leaf-Fatsia-02 1
+    3300004: Leaf-Fatsia-02 10
+    3300006: Leaf-Fatsia-02 11
+    3300008: Leaf-Fatsia-02 12
+    3300010: Leaf-Fatsia-02 13
+    3300012: Leaf-Fatsia-02 14
+    3300014: Leaf-Fatsia-02 15
+    3300016: Leaf-Fatsia-02 16
+    3300018: Leaf-Fatsia-02 17
+    3300020: Leaf-Fatsia-02 18
+    3300022: Leaf-Fatsia-02 19
+    3300024: Leaf-Fatsia-02 2
+    3300026: Leaf-Fatsia-02 20
+    3300028: Leaf-Fatsia-02 21
+    3300030: Leaf-Fatsia-02 22
+    3300032: Leaf-Fatsia-02 23
+    3300034: Leaf-Fatsia-02 24
+    3300036: Leaf-Fatsia-02 25
+    3300038: Leaf-Fatsia-02 26
+    3300040: Leaf-Fatsia-02 3
+    3300042: Leaf-Fatsia-02 4
+    3300044: Leaf-Fatsia-02 5
+    3300046: Leaf-Fatsia-02 6
+    3300048: Leaf-Fatsia-02 7
+    3300050: Leaf-Fatsia-02 8
+    3300052: Leaf-Fatsia-02 9
+    3300054: Leaf-Fatsia-03
+    3300056: Leaf-Fatsia-03 1
+    3300058: Leaf-Fatsia-03 10
+    3300060: Leaf-Fatsia-03 11
+    3300062: Leaf-Fatsia-03 12
+    3300064: Leaf-Fatsia-03 13
+    3300066: Leaf-Fatsia-03 14
+    3300068: Leaf-Fatsia-03 15
+    3300070: Leaf-Fatsia-03 16
+    3300072: Leaf-Fatsia-03 17
+    3300074: Leaf-Fatsia-03 18
+    3300076: Leaf-Fatsia-03 19
+    3300078: Leaf-Fatsia-03 2
+    3300080: Leaf-Fatsia-03 20
+    3300082: Leaf-Fatsia-03 21
+    3300084: Leaf-Fatsia-03 22
+    3300086: Leaf-Fatsia-03 23
+    3300088: Leaf-Fatsia-03 24
+    3300090: Leaf-Fatsia-03 25
+    3300092: Leaf-Fatsia-03 26
+    3300094: Leaf-Fatsia-03 3
+    3300096: Leaf-Fatsia-03 4
+    3300098: Leaf-Fatsia-03 5
+    3300100: Leaf-Fatsia-03 6
+    3300102: Leaf-Fatsia-03 7
+    3300104: Leaf-Fatsia-03 8
+    3300106: Leaf-Fatsia-03 9
+    4300000: Mesh Leaf-Fatsia-03
+    4300002: Mesh Leaf-Fatsia-02
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

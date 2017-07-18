@@ -1,0 +1,570 @@
+fileFormatVersion: 2
+guid: db645a75cb6449a48a97a352aaf1b31c
+timeCreated: 1497501438
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000
+  assetHash:
+    serializedVersion: 2
+    Hash: f9acb61efa609ab9b2199880902acb9d
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 0.888535, y: 0.5184805, z: -1.5840417}
+      lookAt: {x: 0.55589414, y: 0.40021294, z: -0.42164335}
+      up: {x: -0.02678425, y: 0.99524987, z: 0.09359636}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: flower
+    100004: flower 1
+    100006: flower 2
+    100008: flower 3
+    100010: flower 4
+    100012: flower leaf
+    100014: flower leaf 1
+    100016: flower leaf 10
+    100018: flower leaf 11
+    100020: flower leaf 12
+    100022: flower leaf 13
+    100024: flower leaf 14
+    100026: flower leaf 15
+    100028: flower leaf 16
+    100030: flower leaf 17
+    100032: flower leaf 18
+    100034: flower leaf 19
+    100036: flower leaf 2
+    100038: flower leaf 20
+    100040: flower leaf 21
+    100042: flower leaf 22
+    100044: flower leaf 23
+    100046: flower leaf 24
+    100048: flower leaf 25
+    100050: flower leaf 26
+    100052: flower leaf 27
+    100054: flower leaf 28
+    100056: flower leaf 29
+    100058: flower leaf 3
+    100060: flower leaf 30
+    100062: flower leaf 31
+    100064: flower leaf 32
+    100066: flower leaf 33
+    100068: flower leaf 34
+    100070: flower leaf 35
+    100072: flower leaf 36
+    100074: flower leaf 37
+    100076: flower leaf 38
+    100078: flower leaf 39
+    100080: flower leaf 4
+    100082: flower leaf 40
+    100084: flower leaf 41
+    100086: flower leaf 42
+    100088: flower leaf 43
+    100090: flower leaf 44
+    100092: flower leaf 45
+    100094: flower leaf 46
+    100096: flower leaf 47
+    100098: flower leaf 48
+    100100: flower leaf 49
+    100102: flower leaf 5
+    100104: flower leaf 50
+    100106: flower leaf 51
+    100108: flower leaf 52
+    100110: flower leaf 53
+    100112: flower leaf 54
+    100114: flower leaf 55
+    100116: flower leaf 56
+    100118: flower leaf 57
+    100120: flower leaf 58
+    100122: flower leaf 59
+    100124: flower leaf 6
+    100126: flower leaf 60
+    100128: flower leaf 61
+    100130: flower leaf 62
+    100132: flower leaf 63
+    100134: flower leaf 64
+    100136: flower leaf 65
+    100138: flower leaf 66
+    100140: flower leaf 67
+    100142: flower leaf 68
+    100144: flower leaf 69
+    100146: flower leaf 7
+    100148: flower leaf 70
+    100150: flower leaf 71
+    100152: flower leaf 72
+    100154: flower leaf 73
+    100156: flower leaf 74
+    100158: flower leaf 75
+    100160: flower leaf 76
+    100162: flower leaf 77
+    100164: flower leaf 78
+    100166: flower leaf 79
+    100168: flower leaf 8
+    100170: flower leaf 9
+    100172: pad_green
+    100174: pad_green 1
+    100176: pad_green 10
+    100178: pad_green 11
+    100180: pad_green 12
+    100182: pad_green 13
+    100184: pad_green 14
+    100186: pad_green 15
+    100188: pad_green 16
+    100190: pad_green 17
+    100192: pad_green 18
+    100194: pad_green 2
+    100196: pad_green 3
+    100198: pad_green 4
+    100200: pad_green 5
+    100202: pad_green 6
+    100204: pad_green 7
+    100206: pad_green 8
+    100208: pad_green 9
+    100210: pad_purple
+    100212: pad_purple 1
+    100214: pad_purple 10
+    100216: pad_purple 11
+    100218: pad_purple 12
+    100220: pad_purple 13
+    100222: pad_purple 14
+    100224: pad_purple 15
+    100226: pad_purple 2
+    100228: pad_purple 3
+    100230: pad_purple 4
+    100232: pad_purple 5
+    100234: pad_purple 6
+    100236: pad_purple 7
+    100238: pad_purple 8
+    100240: pad_purple 9
+    400000: //RootNode
+    400002: flower
+    400004: flower 1
+    400006: flower 2
+    400008: flower 3
+    400010: flower 4
+    400012: flower leaf
+    400014: flower leaf 1
+    400016: flower leaf 10
+    400018: flower leaf 11
+    400020: flower leaf 12
+    400022: flower leaf 13
+    400024: flower leaf 14
+    400026: flower leaf 15
+    400028: flower leaf 16
+    400030: flower leaf 17
+    400032: flower leaf 18
+    400034: flower leaf 19
+    400036: flower leaf 2
+    400038: flower leaf 20
+    400040: flower leaf 21
+    400042: flower leaf 22
+    400044: flower leaf 23
+    400046: flower leaf 24
+    400048: flower leaf 25
+    400050: flower leaf 26
+    400052: flower leaf 27
+    400054: flower leaf 28
+    400056: flower leaf 29
+    400058: flower leaf 3
+    400060: flower leaf 30
+    400062: flower leaf 31
+    400064: flower leaf 32
+    400066: flower leaf 33
+    400068: flower leaf 34
+    400070: flower leaf 35
+    400072: flower leaf 36
+    400074: flower leaf 37
+    400076: flower leaf 38
+    400078: flower leaf 39
+    400080: flower leaf 4
+    400082: flower leaf 40
+    400084: flower leaf 41
+    400086: flower leaf 42
+    400088: flower leaf 43
+    400090: flower leaf 44
+    400092: flower leaf 45
+    400094: flower leaf 46
+    400096: flower leaf 47
+    400098: flower leaf 48
+    400100: flower leaf 49
+    400102: flower leaf 5
+    400104: flower leaf 50
+    400106: flower leaf 51
+    400108: flower leaf 52
+    400110: flower leaf 53
+    400112: flower leaf 54
+    400114: flower leaf 55
+    400116: flower leaf 56
+    400118: flower leaf 57
+    400120: flower leaf 58
+    400122: flower leaf 59
+    400124: flower leaf 6
+    400126: flower leaf 60
+    400128: flower leaf 61
+    400130: flower leaf 62
+    400132: flower leaf 63
+    400134: flower leaf 64
+    400136: flower leaf 65
+    400138: flower leaf 66
+    400140: flower leaf 67
+    400142: flower leaf 68
+    400144: flower leaf 69
+    400146: flower leaf 7
+    400148: flower leaf 70
+    400150: flower leaf 71
+    400152: flower leaf 72
+    400154: flower leaf 73
+    400156: flower leaf 74
+    400158: flower leaf 75
+    400160: flower leaf 76
+    400162: flower leaf 77
+    400164: flower leaf 78
+    400166: flower leaf 79
+    400168: flower leaf 8
+    400170: flower leaf 9
+    400172: pad_green
+    400174: pad_green 1
+    400176: pad_green 10
+    400178: pad_green 11
+    400180: pad_green 12
+    400182: pad_green 13
+    400184: pad_green 14
+    400186: pad_green 15
+    400188: pad_green 16
+    400190: pad_green 17
+    400192: pad_green 18
+    400194: pad_green 2
+    400196: pad_green 3
+    400198: pad_green 4
+    400200: pad_green 5
+    400202: pad_green 6
+    400204: pad_green 7
+    400206: pad_green 8
+    400208: pad_green 9
+    400210: pad_purple
+    400212: pad_purple 1
+    400214: pad_purple 10
+    400216: pad_purple 11
+    400218: pad_purple 12
+    400220: pad_purple 13
+    400222: pad_purple 14
+    400224: pad_purple 15
+    400226: pad_purple 2
+    400228: pad_purple 3
+    400230: pad_purple 4
+    400232: pad_purple 5
+    400234: pad_purple 6
+    400236: pad_purple 7
+    400238: pad_purple 8
+    400240: pad_purple 9
+    2300000: flower leaf
+    2300002: flower leaf 1
+    2300004: flower leaf 10
+    2300006: flower leaf 11
+    2300008: flower leaf 12
+    2300010: flower leaf 13
+    2300012: flower leaf 14
+    2300014: flower leaf 15
+    2300016: flower leaf 16
+    2300018: flower leaf 17
+    2300020: flower leaf 18
+    2300022: flower leaf 19
+    2300024: flower leaf 2
+    2300026: flower leaf 20
+    2300028: flower leaf 21
+    2300030: flower leaf 22
+    2300032: flower leaf 23
+    2300034: flower leaf 24
+    2300036: flower leaf 25
+    2300038: flower leaf 26
+    2300040: flower leaf 27
+    2300042: flower leaf 28
+    2300044: flower leaf 29
+    2300046: flower leaf 3
+    2300048: flower leaf 30
+    2300050: flower leaf 31
+    2300052: flower leaf 32
+    2300054: flower leaf 33
+    2300056: flower leaf 34
+    2300058: flower leaf 35
+    2300060: flower leaf 36
+    2300062: flower leaf 37
+    2300064: flower leaf 38
+    2300066: flower leaf 39
+    2300068: flower leaf 4
+    2300070: flower leaf 40
+    2300072: flower leaf 41
+    2300074: flower leaf 42
+    2300076: flower leaf 43
+    2300078: flower leaf 44
+    2300080: flower leaf 45
+    2300082: flower leaf 46
+    2300084: flower leaf 47
+    2300086: flower leaf 48
+    2300088: flower leaf 49
+    2300090: flower leaf 5
+    2300092: flower leaf 50
+    2300094: flower leaf 51
+    2300096: flower leaf 52
+    2300098: flower leaf 53
+    2300100: flower leaf 54
+    2300102: flower leaf 55
+    2300104: flower leaf 56
+    2300106: flower leaf 57
+    2300108: flower leaf 58
+    2300110: flower leaf 59
+    2300112: flower leaf 6
+    2300114: flower leaf 60
+    2300116: flower leaf 61
+    2300118: flower leaf 62
+    2300120: flower leaf 63
+    2300122: flower leaf 64
+    2300124: flower leaf 65
+    2300126: flower leaf 66
+    2300128: flower leaf 67
+    2300130: flower leaf 68
+    2300132: flower leaf 69
+    2300134: flower leaf 7
+    2300136: flower leaf 70
+    2300138: flower leaf 71
+    2300140: flower leaf 72
+    2300142: flower leaf 73
+    2300144: flower leaf 74
+    2300146: flower leaf 75
+    2300148: flower leaf 76
+    2300150: flower leaf 77
+    2300152: flower leaf 78
+    2300154: flower leaf 79
+    2300156: flower leaf 8
+    2300158: flower leaf 9
+    2300160: pad_green
+    2300162: pad_green 1
+    2300164: pad_green 10
+    2300166: pad_green 11
+    2300168: pad_green 12
+    2300170: pad_green 13
+    2300172: pad_green 14
+    2300174: pad_green 15
+    2300176: pad_green 16
+    2300178: pad_green 17
+    2300180: pad_green 18
+    2300182: pad_green 2
+    2300184: pad_green 3
+    2300186: pad_green 4
+    2300188: pad_green 5
+    2300190: pad_green 6
+    2300192: pad_green 7
+    2300194: pad_green 8
+    2300196: pad_green 9
+    2300198: pad_purple
+    2300200: pad_purple 1
+    2300202: pad_purple 10
+    2300204: pad_purple 11
+    2300206: pad_purple 12
+    2300208: pad_purple 13
+    2300210: pad_purple 14
+    2300212: pad_purple 15
+    2300214: pad_purple 2
+    2300216: pad_purple 3
+    2300218: pad_purple 4
+    2300220: pad_purple 5
+    2300222: pad_purple 6
+    2300224: pad_purple 7
+    2300226: pad_purple 8
+    2300228: pad_purple 9
+    3300000: flower leaf
+    3300002: flower leaf 1
+    3300004: flower leaf 10
+    3300006: flower leaf 11
+    3300008: flower leaf 12
+    3300010: flower leaf 13
+    3300012: flower leaf 14
+    3300014: flower leaf 15
+    3300016: flower leaf 16
+    3300018: flower leaf 17
+    3300020: flower leaf 18
+    3300022: flower leaf 19
+    3300024: flower leaf 2
+    3300026: flower leaf 20
+    3300028: flower leaf 21
+    3300030: flower leaf 22
+    3300032: flower leaf 23
+    3300034: flower leaf 24
+    3300036: flower leaf 25
+    3300038: flower leaf 26
+    3300040: flower leaf 27
+    3300042: flower leaf 28
+    3300044: flower leaf 29
+    3300046: flower leaf 3
+    3300048: flower leaf 30
+    3300050: flower leaf 31
+    3300052: flower leaf 32
+    3300054: flower leaf 33
+    3300056: flower leaf 34
+    3300058: flower leaf 35
+    3300060: flower leaf 36
+    3300062: flower leaf 37
+    3300064: flower leaf 38
+    3300066: flower leaf 39
+    3300068: flower leaf 4
+    3300070: flower leaf 40
+    3300072: flower leaf 41
+    3300074: flower leaf 42
+    3300076: flower leaf 43
+    3300078: flower leaf 44
+    3300080: flower leaf 45
+    3300082: flower leaf 46
+    3300084: flower leaf 47
+    3300086: flower leaf 48
+    3300088: flower leaf 49
+    3300090: flower leaf 5
+    3300092: flower leaf 50
+    3300094: flower leaf 51
+    3300096: flower leaf 52
+    3300098: flower leaf 53
+    3300100: flower leaf 54
+    3300102: flower leaf 55
+    3300104: flower leaf 56
+    3300106: flower leaf 57
+    3300108: flower leaf 58
+    3300110: flower leaf 59
+    3300112: flower leaf 6
+    3300114: flower leaf 60
+    3300116: flower leaf 61
+    3300118: flower leaf 62
+    3300120: flower leaf 63
+    3300122: flower leaf 64
+    3300124: flower leaf 65
+    3300126: flower leaf 66
+    3300128: flower leaf 67
+    3300130: flower leaf 68
+    3300132: flower leaf 69
+    3300134: flower leaf 7
+    3300136: flower leaf 70
+    3300138: flower leaf 71
+    3300140: flower leaf 72
+    3300142: flower leaf 73
+    3300144: flower leaf 74
+    3300146: flower leaf 75
+    3300148: flower leaf 76
+    3300150: flower leaf 77
+    3300152: flower leaf 78
+    3300154: flower leaf 79
+    3300156: flower leaf 8
+    3300158: flower leaf 9
+    3300160: pad_green
+    3300162: pad_green 1
+    3300164: pad_green 10
+    3300166: pad_green 11
+    3300168: pad_green 12
+    3300170: pad_green 13
+    3300172: pad_green 14
+    3300174: pad_green 15
+    3300176: pad_green 16
+    3300178: pad_green 17
+    3300180: pad_green 18
+    3300182: pad_green 2
+    3300184: pad_green 3
+    3300186: pad_green 4
+    3300188: pad_green 5
+    3300190: pad_green 6
+    3300192: pad_green 7
+    3300194: pad_green 8
+    3300196: pad_green 9
+    3300198: pad_purple
+    3300200: pad_purple 1
+    3300202: pad_purple 10
+    3300204: pad_purple 11
+    3300206: pad_purple 12
+    3300208: pad_purple 13
+    3300210: pad_purple 14
+    3300212: pad_purple 15
+    3300214: pad_purple 2
+    3300216: pad_purple 3
+    3300218: pad_purple 4
+    3300220: pad_purple 5
+    3300222: pad_purple 6
+    3300224: pad_purple 7
+    3300226: pad_purple 8
+    3300228: pad_purple 9
+    4300000: Mesh pad_purple
+    4300002: Mesh flower leaf
+    4300004: Mesh pad_green
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

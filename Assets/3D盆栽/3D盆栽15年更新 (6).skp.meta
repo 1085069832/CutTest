@@ -1,0 +1,1186 @@
+fileFormatVersion: 2
+guid: d5be96f8e8134074d9b532158a0e8834
+timeCreated: 1497501438
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f000000800000008100000082000000830000008400000085000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000aa000000ab000000ac000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000f1000000f2000000f3000000f4000000f5000000f6000000f7000000f8000000f9000000fa000000fb000000fc000000fd000000fe000000ff000000000100000101000002010000030100000401000005010000060100000701000008010000090100000a0100000b0100000c0100000d0100000e0100000f010000100100001101000012010000130100001401000015010000160100001701000018010000190100001a0100001b0100001c0100001d0100001e0100001f010000200100002101000022010000230100002401000025010000260100002701000028010000290100002a0100002b0100002c0100002d0100002e0100002f010000300100003101000032010000330100003401000035010000360100003701000038010000390100003a0100003b0100003c0100003d0100003e0100003f010000400100004101000042010000430100004401000045010000460100004701000048010000490100004a0100004b0100004c0100004d0100004e0100004f010000500100005101000052010000530100005401000055010000560100005701000058010000590100005a0100005b0100005c0100005d0100005e0100005f010000600100006101000062010000630100006401000065010000660100006701000068010000690100006a0100006b0100006c0100006d0100006e0100006f010000700100007101000072010000730100007401000075010000760100007701000078010000790100007a0100007b0100007c0100007d0100007e0100007f010000800100008101000082010000830100008401000085010000860100008701000088010000890100008a0100008b0100008c0100008d0100008e0100008f010000900100009101000092010000930100009401000095010000960100009701000098010000990100009a0100009b0100009c0100009d0100009e0100009f010000a0010000a1010000a2010000a3010000a4010000a5010000a6010000a7010000a8010000a9010000aa010000ab010000ac010000ad010000ae010000af010000b0010000b1010000b2010000b3010000b4010000b5010000b6010000b7010000b8010000b9010000ba010000bb010000bc010000bd010000be010000bf010000c0010000c1010000c2010000c3010000c4010000c5010000c6010000c7010000c8010000c9010000ca010000cb010000cc010000cd010000ce010000cf010000d0010000d1010000d2010000d3010000d4010000d5010000d6010000d7010000d8010000d9010000da010000db010000dc010000dd010000de010000df010000e0010000e1010000e2010000e3010000e4010000e5010000e6010000e7010000e8010000e9010000ea010000eb010000ec010000ed010000ee010000ef010000f0010000f1010000f2010000f3010000f4010000f5010000f6010000f7010000f8010000f9010000fa010000fb010000fc010000fd010000fe010000ff010000000200000102000002020000030200000402000005020000060200000702000008020000090200000a0200000b0200000c0200000d0200000e0200000f020000100200001102000012020000130200001402000015020000160200001702000018020000190200001a0200001b0200001c0200001d0200001e020000
+  assetHash:
+    serializedVersion: 2
+    Hash: cfc6d3fe101f4721a98d21893cd78af0
+  longitude: -105.242139
+  latitude: 40.018309
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: 0.10641206, y: 0.40518314, z: -0.955644}
+      lookAt: {x: 0.030908845, y: 0.19769369, z: -0.122817}
+      up: {x: -0.02174322, y: 0.9705701, z: 0.23983534}
+      fov: 35
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes: []
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 2 impatiens flowers
+    100002: 2 impatiens flowers 1
+    100004: //RootNode
+    100006: FlowerPot
+    100008: impatiens flower
+    100010: impatiens flower 1
+    100012: impatiens flower 10
+    100014: impatiens flower 11
+    100016: impatiens flower 12
+    100018: impatiens flower 13
+    100020: impatiens flower 14
+    100022: impatiens flower 15
+    100024: impatiens flower 16
+    100026: impatiens flower 17
+    100028: impatiens flower 18
+    100030: impatiens flower 19
+    100032: impatiens flower 2
+    100034: impatiens flower 20
+    100036: impatiens flower 21
+    100038: impatiens flower 22
+    100040: impatiens flower 23
+    100042: impatiens flower 24
+    100044: impatiens flower 25
+    100046: impatiens flower 26
+    100048: impatiens flower 27
+    100050: impatiens flower 28
+    100052: impatiens flower 29
+    100054: impatiens flower 3
+    100056: impatiens flower 30
+    100058: impatiens flower 31
+    100060: impatiens flower 4
+    100062: impatiens flower 5
+    100064: impatiens flower 6
+    100066: impatiens flower 7
+    100068: impatiens flower 8
+    100070: impatiens flower 9
+    100072: impatiens flower#1
+    100074: impatiens flower#1 1
+    100076: impatiens flower#1 10
+    100078: impatiens flower#1 11
+    100080: impatiens flower#1 12
+    100082: impatiens flower#1 13
+    100084: impatiens flower#1 14
+    100086: impatiens flower#1 15
+    100088: impatiens flower#1 16
+    100090: impatiens flower#1 17
+    100092: impatiens flower#1 18
+    100094: impatiens flower#1 2
+    100096: impatiens flower#1 3
+    100098: impatiens flower#1 4
+    100100: impatiens flower#1 5
+    100102: impatiens flower#1 6
+    100104: impatiens flower#1 7
+    100106: impatiens flower#1 8
+    100108: impatiens flower#1 9
+    100110: impatiens petal
+    100112: impatiens petal 1
+    100114: impatiens petal 10
+    100116: impatiens petal 100
+    100118: impatiens petal 101
+    100120: impatiens petal 102
+    100122: impatiens petal 103
+    100124: impatiens petal 104
+    100126: impatiens petal 105
+    100128: impatiens petal 106
+    100130: impatiens petal 107
+    100132: impatiens petal 108
+    100134: impatiens petal 109
+    100136: impatiens petal 11
+    100138: impatiens petal 110
+    100140: impatiens petal 111
+    100142: impatiens petal 112
+    100144: impatiens petal 113
+    100146: impatiens petal 114
+    100148: impatiens petal 115
+    100150: impatiens petal 116
+    100152: impatiens petal 117
+    100154: impatiens petal 118
+    100156: impatiens petal 119
+    100158: impatiens petal 12
+    100160: impatiens petal 120
+    100162: impatiens petal 121
+    100164: impatiens petal 122
+    100166: impatiens petal 123
+    100168: impatiens petal 124
+    100170: impatiens petal 125
+    100172: impatiens petal 126
+    100174: impatiens petal 127
+    100176: impatiens petal 128
+    100178: impatiens petal 129
+    100180: impatiens petal 13
+    100182: impatiens petal 130
+    100184: impatiens petal 131
+    100186: impatiens petal 132
+    100188: impatiens petal 133
+    100190: impatiens petal 134
+    100192: impatiens petal 135
+    100194: impatiens petal 136
+    100196: impatiens petal 137
+    100198: impatiens petal 138
+    100200: impatiens petal 139
+    100202: impatiens petal 14
+    100204: impatiens petal 140
+    100206: impatiens petal 141
+    100208: impatiens petal 142
+    100210: impatiens petal 143
+    100212: impatiens petal 144
+    100214: impatiens petal 145
+    100216: impatiens petal 146
+    100218: impatiens petal 147
+    100220: impatiens petal 148
+    100222: impatiens petal 149
+    100224: impatiens petal 15
+    100226: impatiens petal 150
+    100228: impatiens petal 151
+    100230: impatiens petal 152
+    100232: impatiens petal 153
+    100234: impatiens petal 154
+    100236: impatiens petal 155
+    100238: impatiens petal 156
+    100240: impatiens petal 157
+    100242: impatiens petal 158
+    100244: impatiens petal 159
+    100246: impatiens petal 16
+    100248: impatiens petal 160
+    100250: impatiens petal 161
+    100252: impatiens petal 162
+    100254: impatiens petal 163
+    100256: impatiens petal 164
+    100258: impatiens petal 165
+    100260: impatiens petal 166
+    100262: impatiens petal 167
+    100264: impatiens petal 168
+    100266: impatiens petal 169
+    100268: impatiens petal 17
+    100270: impatiens petal 170
+    100272: impatiens petal 171
+    100274: impatiens petal 172
+    100276: impatiens petal 173
+    100278: impatiens petal 174
+    100280: impatiens petal 175
+    100282: impatiens petal 176
+    100284: impatiens petal 177
+    100286: impatiens petal 178
+    100288: impatiens petal 179
+    100290: impatiens petal 18
+    100292: impatiens petal 180
+    100294: impatiens petal 181
+    100296: impatiens petal 182
+    100298: impatiens petal 183
+    100300: impatiens petal 184
+    100302: impatiens petal 185
+    100304: impatiens petal 186
+    100306: impatiens petal 187
+    100308: impatiens petal 188
+    100310: impatiens petal 189
+    100312: impatiens petal 19
+    100314: impatiens petal 190
+    100316: impatiens petal 191
+    100318: impatiens petal 192
+    100320: impatiens petal 193
+    100322: impatiens petal 194
+    100324: impatiens petal 195
+    100326: impatiens petal 196
+    100328: impatiens petal 197
+    100330: impatiens petal 198
+    100332: impatiens petal 199
+    100334: impatiens petal 2
+    100336: impatiens petal 20
+    100338: impatiens petal 200
+    100340: impatiens petal 201
+    100342: impatiens petal 202
+    100344: impatiens petal 203
+    100346: impatiens petal 21
+    100348: impatiens petal 22
+    100350: impatiens petal 23
+    100352: impatiens petal 24
+    100354: impatiens petal 25
+    100356: impatiens petal 26
+    100358: impatiens petal 27
+    100360: impatiens petal 28
+    100362: impatiens petal 29
+    100364: impatiens petal 3
+    100366: impatiens petal 30
+    100368: impatiens petal 31
+    100370: impatiens petal 32
+    100372: impatiens petal 33
+    100374: impatiens petal 34
+    100376: impatiens petal 35
+    100378: impatiens petal 36
+    100380: impatiens petal 37
+    100382: impatiens petal 38
+    100384: impatiens petal 39
+    100386: impatiens petal 4
+    100388: impatiens petal 40
+    100390: impatiens petal 41
+    100392: impatiens petal 42
+    100394: impatiens petal 43
+    100396: impatiens petal 44
+    100398: impatiens petal 45
+    100400: impatiens petal 46
+    100402: impatiens petal 47
+    100404: impatiens petal 48
+    100406: impatiens petal 49
+    100408: impatiens petal 5
+    100410: impatiens petal 50
+    100412: impatiens petal 51
+    100414: impatiens petal 52
+    100416: impatiens petal 53
+    100418: impatiens petal 54
+    100420: impatiens petal 55
+    100422: impatiens petal 56
+    100424: impatiens petal 57
+    100426: impatiens petal 58
+    100428: impatiens petal 59
+    100430: impatiens petal 6
+    100432: impatiens petal 60
+    100434: impatiens petal 61
+    100436: impatiens petal 62
+    100438: impatiens petal 63
+    100440: impatiens petal 64
+    100442: impatiens petal 65
+    100444: impatiens petal 66
+    100446: impatiens petal 67
+    100448: impatiens petal 68
+    100450: impatiens petal 69
+    100452: impatiens petal 7
+    100454: impatiens petal 70
+    100456: impatiens petal 71
+    100458: impatiens petal 72
+    100460: impatiens petal 73
+    100462: impatiens petal 74
+    100464: impatiens petal 75
+    100466: impatiens petal 76
+    100468: impatiens petal 77
+    100470: impatiens petal 78
+    100472: impatiens petal 79
+    100474: impatiens petal 8
+    100476: impatiens petal 80
+    100478: impatiens petal 81
+    100480: impatiens petal 82
+    100482: impatiens petal 83
+    100484: impatiens petal 84
+    100486: impatiens petal 85
+    100488: impatiens petal 86
+    100490: impatiens petal 87
+    100492: impatiens petal 88
+    100494: impatiens petal 89
+    100496: impatiens petal 9
+    100498: impatiens petal 90
+    100500: impatiens petal 91
+    100502: impatiens petal 92
+    100504: impatiens petal 93
+    100506: impatiens petal 94
+    100508: impatiens petal 95
+    100510: impatiens petal 96
+    100512: impatiens petal 97
+    100514: impatiens petal 98
+    100516: impatiens petal 99
+    100518: stem
+    100520: stem 1
+    100522: stem 10
+    100524: stem 2
+    100526: stem 3
+    100528: stem 4
+    100530: stem 5
+    100532: stem 6
+    100534: stem 7
+    100536: stem 8
+    100538: stem 9
+    100540: working leaf
+    100542: working leaf 1
+    100544: working leaf 10
+    100546: working leaf 11
+    100548: working leaf 12
+    100550: working leaf 13
+    100552: working leaf 14
+    100554: working leaf 15
+    100556: working leaf 16
+    100558: working leaf 17
+    100560: working leaf 18
+    100562: working leaf 19
+    100564: working leaf 2
+    100566: working leaf 20
+    100568: working leaf 21
+    100570: working leaf 22
+    100572: working leaf 23
+    100574: working leaf 24
+    100576: working leaf 25
+    100578: working leaf 26
+    100580: working leaf 27
+    100582: working leaf 28
+    100584: working leaf 29
+    100586: working leaf 3
+    100588: working leaf 30
+    100590: working leaf 31
+    100592: working leaf 32
+    100594: working leaf 33
+    100596: working leaf 4
+    100598: working leaf 5
+    100600: working leaf 6
+    100602: working leaf 7
+    100604: working leaf 8
+    100606: working leaf 9
+    400000: 2 impatiens flowers
+    400002: 2 impatiens flowers 1
+    400004: //RootNode
+    400006: FlowerPot
+    400008: impatiens flower
+    400010: impatiens flower 1
+    400012: impatiens flower 10
+    400014: impatiens flower 11
+    400016: impatiens flower 12
+    400018: impatiens flower 13
+    400020: impatiens flower 14
+    400022: impatiens flower 15
+    400024: impatiens flower 16
+    400026: impatiens flower 17
+    400028: impatiens flower 18
+    400030: impatiens flower 19
+    400032: impatiens flower 2
+    400034: impatiens flower 20
+    400036: impatiens flower 21
+    400038: impatiens flower 22
+    400040: impatiens flower 23
+    400042: impatiens flower 24
+    400044: impatiens flower 25
+    400046: impatiens flower 26
+    400048: impatiens flower 27
+    400050: impatiens flower 28
+    400052: impatiens flower 29
+    400054: impatiens flower 3
+    400056: impatiens flower 30
+    400058: impatiens flower 31
+    400060: impatiens flower 4
+    400062: impatiens flower 5
+    400064: impatiens flower 6
+    400066: impatiens flower 7
+    400068: impatiens flower 8
+    400070: impatiens flower 9
+    400072: impatiens flower#1
+    400074: impatiens flower#1 1
+    400076: impatiens flower#1 10
+    400078: impatiens flower#1 11
+    400080: impatiens flower#1 12
+    400082: impatiens flower#1 13
+    400084: impatiens flower#1 14
+    400086: impatiens flower#1 15
+    400088: impatiens flower#1 16
+    400090: impatiens flower#1 17
+    400092: impatiens flower#1 18
+    400094: impatiens flower#1 2
+    400096: impatiens flower#1 3
+    400098: impatiens flower#1 4
+    400100: impatiens flower#1 5
+    400102: impatiens flower#1 6
+    400104: impatiens flower#1 7
+    400106: impatiens flower#1 8
+    400108: impatiens flower#1 9
+    400110: impatiens petal
+    400112: impatiens petal 1
+    400114: impatiens petal 10
+    400116: impatiens petal 100
+    400118: impatiens petal 101
+    400120: impatiens petal 102
+    400122: impatiens petal 103
+    400124: impatiens petal 104
+    400126: impatiens petal 105
+    400128: impatiens petal 106
+    400130: impatiens petal 107
+    400132: impatiens petal 108
+    400134: impatiens petal 109
+    400136: impatiens petal 11
+    400138: impatiens petal 110
+    400140: impatiens petal 111
+    400142: impatiens petal 112
+    400144: impatiens petal 113
+    400146: impatiens petal 114
+    400148: impatiens petal 115
+    400150: impatiens petal 116
+    400152: impatiens petal 117
+    400154: impatiens petal 118
+    400156: impatiens petal 119
+    400158: impatiens petal 12
+    400160: impatiens petal 120
+    400162: impatiens petal 121
+    400164: impatiens petal 122
+    400166: impatiens petal 123
+    400168: impatiens petal 124
+    400170: impatiens petal 125
+    400172: impatiens petal 126
+    400174: impatiens petal 127
+    400176: impatiens petal 128
+    400178: impatiens petal 129
+    400180: impatiens petal 13
+    400182: impatiens petal 130
+    400184: impatiens petal 131
+    400186: impatiens petal 132
+    400188: impatiens petal 133
+    400190: impatiens petal 134
+    400192: impatiens petal 135
+    400194: impatiens petal 136
+    400196: impatiens petal 137
+    400198: impatiens petal 138
+    400200: impatiens petal 139
+    400202: impatiens petal 14
+    400204: impatiens petal 140
+    400206: impatiens petal 141
+    400208: impatiens petal 142
+    400210: impatiens petal 143
+    400212: impatiens petal 144
+    400214: impatiens petal 145
+    400216: impatiens petal 146
+    400218: impatiens petal 147
+    400220: impatiens petal 148
+    400222: impatiens petal 149
+    400224: impatiens petal 15
+    400226: impatiens petal 150
+    400228: impatiens petal 151
+    400230: impatiens petal 152
+    400232: impatiens petal 153
+    400234: impatiens petal 154
+    400236: impatiens petal 155
+    400238: impatiens petal 156
+    400240: impatiens petal 157
+    400242: impatiens petal 158
+    400244: impatiens petal 159
+    400246: impatiens petal 16
+    400248: impatiens petal 160
+    400250: impatiens petal 161
+    400252: impatiens petal 162
+    400254: impatiens petal 163
+    400256: impatiens petal 164
+    400258: impatiens petal 165
+    400260: impatiens petal 166
+    400262: impatiens petal 167
+    400264: impatiens petal 168
+    400266: impatiens petal 169
+    400268: impatiens petal 17
+    400270: impatiens petal 170
+    400272: impatiens petal 171
+    400274: impatiens petal 172
+    400276: impatiens petal 173
+    400278: impatiens petal 174
+    400280: impatiens petal 175
+    400282: impatiens petal 176
+    400284: impatiens petal 177
+    400286: impatiens petal 178
+    400288: impatiens petal 179
+    400290: impatiens petal 18
+    400292: impatiens petal 180
+    400294: impatiens petal 181
+    400296: impatiens petal 182
+    400298: impatiens petal 183
+    400300: impatiens petal 184
+    400302: impatiens petal 185
+    400304: impatiens petal 186
+    400306: impatiens petal 187
+    400308: impatiens petal 188
+    400310: impatiens petal 189
+    400312: impatiens petal 19
+    400314: impatiens petal 190
+    400316: impatiens petal 191
+    400318: impatiens petal 192
+    400320: impatiens petal 193
+    400322: impatiens petal 194
+    400324: impatiens petal 195
+    400326: impatiens petal 196
+    400328: impatiens petal 197
+    400330: impatiens petal 198
+    400332: impatiens petal 199
+    400334: impatiens petal 2
+    400336: impatiens petal 20
+    400338: impatiens petal 200
+    400340: impatiens petal 201
+    400342: impatiens petal 202
+    400344: impatiens petal 203
+    400346: impatiens petal 21
+    400348: impatiens petal 22
+    400350: impatiens petal 23
+    400352: impatiens petal 24
+    400354: impatiens petal 25
+    400356: impatiens petal 26
+    400358: impatiens petal 27
+    400360: impatiens petal 28
+    400362: impatiens petal 29
+    400364: impatiens petal 3
+    400366: impatiens petal 30
+    400368: impatiens petal 31
+    400370: impatiens petal 32
+    400372: impatiens petal 33
+    400374: impatiens petal 34
+    400376: impatiens petal 35
+    400378: impatiens petal 36
+    400380: impatiens petal 37
+    400382: impatiens petal 38
+    400384: impatiens petal 39
+    400386: impatiens petal 4
+    400388: impatiens petal 40
+    400390: impatiens petal 41
+    400392: impatiens petal 42
+    400394: impatiens petal 43
+    400396: impatiens petal 44
+    400398: impatiens petal 45
+    400400: impatiens petal 46
+    400402: impatiens petal 47
+    400404: impatiens petal 48
+    400406: impatiens petal 49
+    400408: impatiens petal 5
+    400410: impatiens petal 50
+    400412: impatiens petal 51
+    400414: impatiens petal 52
+    400416: impatiens petal 53
+    400418: impatiens petal 54
+    400420: impatiens petal 55
+    400422: impatiens petal 56
+    400424: impatiens petal 57
+    400426: impatiens petal 58
+    400428: impatiens petal 59
+    400430: impatiens petal 6
+    400432: impatiens petal 60
+    400434: impatiens petal 61
+    400436: impatiens petal 62
+    400438: impatiens petal 63
+    400440: impatiens petal 64
+    400442: impatiens petal 65
+    400444: impatiens petal 66
+    400446: impatiens petal 67
+    400448: impatiens petal 68
+    400450: impatiens petal 69
+    400452: impatiens petal 7
+    400454: impatiens petal 70
+    400456: impatiens petal 71
+    400458: impatiens petal 72
+    400460: impatiens petal 73
+    400462: impatiens petal 74
+    400464: impatiens petal 75
+    400466: impatiens petal 76
+    400468: impatiens petal 77
+    400470: impatiens petal 78
+    400472: impatiens petal 79
+    400474: impatiens petal 8
+    400476: impatiens petal 80
+    400478: impatiens petal 81
+    400480: impatiens petal 82
+    400482: impatiens petal 83
+    400484: impatiens petal 84
+    400486: impatiens petal 85
+    400488: impatiens petal 86
+    400490: impatiens petal 87
+    400492: impatiens petal 88
+    400494: impatiens petal 89
+    400496: impatiens petal 9
+    400498: impatiens petal 90
+    400500: impatiens petal 91
+    400502: impatiens petal 92
+    400504: impatiens petal 93
+    400506: impatiens petal 94
+    400508: impatiens petal 95
+    400510: impatiens petal 96
+    400512: impatiens petal 97
+    400514: impatiens petal 98
+    400516: impatiens petal 99
+    400518: stem
+    400520: stem 1
+    400522: stem 10
+    400524: stem 2
+    400526: stem 3
+    400528: stem 4
+    400530: stem 5
+    400532: stem 6
+    400534: stem 7
+    400536: stem 8
+    400538: stem 9
+    400540: working leaf
+    400542: working leaf 1
+    400544: working leaf 10
+    400546: working leaf 11
+    400548: working leaf 12
+    400550: working leaf 13
+    400552: working leaf 14
+    400554: working leaf 15
+    400556: working leaf 16
+    400558: working leaf 17
+    400560: working leaf 18
+    400562: working leaf 19
+    400564: working leaf 2
+    400566: working leaf 20
+    400568: working leaf 21
+    400570: working leaf 22
+    400572: working leaf 23
+    400574: working leaf 24
+    400576: working leaf 25
+    400578: working leaf 26
+    400580: working leaf 27
+    400582: working leaf 28
+    400584: working leaf 29
+    400586: working leaf 3
+    400588: working leaf 30
+    400590: working leaf 31
+    400592: working leaf 32
+    400594: working leaf 33
+    400596: working leaf 4
+    400598: working leaf 5
+    400600: working leaf 6
+    400602: working leaf 7
+    400604: working leaf 8
+    400606: working leaf 9
+    2300000: FlowerPot
+    2300002: impatiens petal
+    2300004: impatiens petal 1
+    2300006: impatiens petal 10
+    2300008: impatiens petal 100
+    2300010: impatiens petal 101
+    2300012: impatiens petal 102
+    2300014: impatiens petal 103
+    2300016: impatiens petal 104
+    2300018: impatiens petal 105
+    2300020: impatiens petal 106
+    2300022: impatiens petal 107
+    2300024: impatiens petal 108
+    2300026: impatiens petal 109
+    2300028: impatiens petal 11
+    2300030: impatiens petal 110
+    2300032: impatiens petal 111
+    2300034: impatiens petal 112
+    2300036: impatiens petal 113
+    2300038: impatiens petal 114
+    2300040: impatiens petal 115
+    2300042: impatiens petal 116
+    2300044: impatiens petal 117
+    2300046: impatiens petal 118
+    2300048: impatiens petal 119
+    2300050: impatiens petal 12
+    2300052: impatiens petal 120
+    2300054: impatiens petal 121
+    2300056: impatiens petal 122
+    2300058: impatiens petal 123
+    2300060: impatiens petal 124
+    2300062: impatiens petal 125
+    2300064: impatiens petal 126
+    2300066: impatiens petal 127
+    2300068: impatiens petal 128
+    2300070: impatiens petal 129
+    2300072: impatiens petal 13
+    2300074: impatiens petal 130
+    2300076: impatiens petal 131
+    2300078: impatiens petal 132
+    2300080: impatiens petal 133
+    2300082: impatiens petal 134
+    2300084: impatiens petal 135
+    2300086: impatiens petal 136
+    2300088: impatiens petal 137
+    2300090: impatiens petal 138
+    2300092: impatiens petal 139
+    2300094: impatiens petal 14
+    2300096: impatiens petal 140
+    2300098: impatiens petal 141
+    2300100: impatiens petal 142
+    2300102: impatiens petal 143
+    2300104: impatiens petal 144
+    2300106: impatiens petal 145
+    2300108: impatiens petal 146
+    2300110: impatiens petal 147
+    2300112: impatiens petal 148
+    2300114: impatiens petal 149
+    2300116: impatiens petal 15
+    2300118: impatiens petal 150
+    2300120: impatiens petal 151
+    2300122: impatiens petal 152
+    2300124: impatiens petal 153
+    2300126: impatiens petal 154
+    2300128: impatiens petal 155
+    2300130: impatiens petal 156
+    2300132: impatiens petal 157
+    2300134: impatiens petal 158
+    2300136: impatiens petal 159
+    2300138: impatiens petal 16
+    2300140: impatiens petal 160
+    2300142: impatiens petal 161
+    2300144: impatiens petal 162
+    2300146: impatiens petal 163
+    2300148: impatiens petal 164
+    2300150: impatiens petal 165
+    2300152: impatiens petal 166
+    2300154: impatiens petal 167
+    2300156: impatiens petal 168
+    2300158: impatiens petal 169
+    2300160: impatiens petal 17
+    2300162: impatiens petal 170
+    2300164: impatiens petal 171
+    2300166: impatiens petal 172
+    2300168: impatiens petal 173
+    2300170: impatiens petal 174
+    2300172: impatiens petal 175
+    2300174: impatiens petal 176
+    2300176: impatiens petal 177
+    2300178: impatiens petal 178
+    2300180: impatiens petal 179
+    2300182: impatiens petal 18
+    2300184: impatiens petal 180
+    2300186: impatiens petal 181
+    2300188: impatiens petal 182
+    2300190: impatiens petal 183
+    2300192: impatiens petal 184
+    2300194: impatiens petal 185
+    2300196: impatiens petal 186
+    2300198: impatiens petal 187
+    2300200: impatiens petal 188
+    2300202: impatiens petal 189
+    2300204: impatiens petal 19
+    2300206: impatiens petal 190
+    2300208: impatiens petal 191
+    2300210: impatiens petal 192
+    2300212: impatiens petal 193
+    2300214: impatiens petal 194
+    2300216: impatiens petal 195
+    2300218: impatiens petal 196
+    2300220: impatiens petal 197
+    2300222: impatiens petal 198
+    2300224: impatiens petal 199
+    2300226: impatiens petal 2
+    2300228: impatiens petal 20
+    2300230: impatiens petal 200
+    2300232: impatiens petal 201
+    2300234: impatiens petal 202
+    2300236: impatiens petal 203
+    2300238: impatiens petal 21
+    2300240: impatiens petal 22
+    2300242: impatiens petal 23
+    2300244: impatiens petal 24
+    2300246: impatiens petal 25
+    2300248: impatiens petal 26
+    2300250: impatiens petal 27
+    2300252: impatiens petal 28
+    2300254: impatiens petal 29
+    2300256: impatiens petal 3
+    2300258: impatiens petal 30
+    2300260: impatiens petal 31
+    2300262: impatiens petal 32
+    2300264: impatiens petal 33
+    2300266: impatiens petal 34
+    2300268: impatiens petal 35
+    2300270: impatiens petal 36
+    2300272: impatiens petal 37
+    2300274: impatiens petal 38
+    2300276: impatiens petal 39
+    2300278: impatiens petal 4
+    2300280: impatiens petal 40
+    2300282: impatiens petal 41
+    2300284: impatiens petal 42
+    2300286: impatiens petal 43
+    2300288: impatiens petal 44
+    2300290: impatiens petal 45
+    2300292: impatiens petal 46
+    2300294: impatiens petal 47
+    2300296: impatiens petal 48
+    2300298: impatiens petal 49
+    2300300: impatiens petal 5
+    2300302: impatiens petal 50
+    2300304: impatiens petal 51
+    2300306: impatiens petal 52
+    2300308: impatiens petal 53
+    2300310: impatiens petal 54
+    2300312: impatiens petal 55
+    2300314: impatiens petal 56
+    2300316: impatiens petal 57
+    2300318: impatiens petal 58
+    2300320: impatiens petal 59
+    2300322: impatiens petal 6
+    2300324: impatiens petal 60
+    2300326: impatiens petal 61
+    2300328: impatiens petal 62
+    2300330: impatiens petal 63
+    2300332: impatiens petal 64
+    2300334: impatiens petal 65
+    2300336: impatiens petal 66
+    2300338: impatiens petal 67
+    2300340: impatiens petal 68
+    2300342: impatiens petal 69
+    2300344: impatiens petal 7
+    2300346: impatiens petal 70
+    2300348: impatiens petal 71
+    2300350: impatiens petal 72
+    2300352: impatiens petal 73
+    2300354: impatiens petal 74
+    2300356: impatiens petal 75
+    2300358: impatiens petal 76
+    2300360: impatiens petal 77
+    2300362: impatiens petal 78
+    2300364: impatiens petal 79
+    2300366: impatiens petal 8
+    2300368: impatiens petal 80
+    2300370: impatiens petal 81
+    2300372: impatiens petal 82
+    2300374: impatiens petal 83
+    2300376: impatiens petal 84
+    2300378: impatiens petal 85
+    2300380: impatiens petal 86
+    2300382: impatiens petal 87
+    2300384: impatiens petal 88
+    2300386: impatiens petal 89
+    2300388: impatiens petal 9
+    2300390: impatiens petal 90
+    2300392: impatiens petal 91
+    2300394: impatiens petal 92
+    2300396: impatiens petal 93
+    2300398: impatiens petal 94
+    2300400: impatiens petal 95
+    2300402: impatiens petal 96
+    2300404: impatiens petal 97
+    2300406: impatiens petal 98
+    2300408: impatiens petal 99
+    2300410: working leaf
+    2300412: working leaf 1
+    2300414: working leaf 10
+    2300416: working leaf 11
+    2300418: working leaf 12
+    2300420: working leaf 13
+    2300422: working leaf 14
+    2300424: working leaf 15
+    2300426: working leaf 16
+    2300428: working leaf 17
+    2300430: working leaf 18
+    2300432: working leaf 19
+    2300434: working leaf 2
+    2300436: working leaf 20
+    2300438: working leaf 21
+    2300440: working leaf 22
+    2300442: working leaf 23
+    2300444: working leaf 24
+    2300446: working leaf 25
+    2300448: working leaf 26
+    2300450: working leaf 27
+    2300452: working leaf 28
+    2300454: working leaf 29
+    2300456: working leaf 3
+    2300458: working leaf 30
+    2300460: working leaf 31
+    2300462: working leaf 32
+    2300464: working leaf 33
+    2300466: working leaf 4
+    2300468: working leaf 5
+    2300470: working leaf 6
+    2300472: working leaf 7
+    2300474: working leaf 8
+    2300476: working leaf 9
+    3300000: FlowerPot
+    3300002: impatiens petal
+    3300004: impatiens petal 1
+    3300006: impatiens petal 10
+    3300008: impatiens petal 100
+    3300010: impatiens petal 101
+    3300012: impatiens petal 102
+    3300014: impatiens petal 103
+    3300016: impatiens petal 104
+    3300018: impatiens petal 105
+    3300020: impatiens petal 106
+    3300022: impatiens petal 107
+    3300024: impatiens petal 108
+    3300026: impatiens petal 109
+    3300028: impatiens petal 11
+    3300030: impatiens petal 110
+    3300032: impatiens petal 111
+    3300034: impatiens petal 112
+    3300036: impatiens petal 113
+    3300038: impatiens petal 114
+    3300040: impatiens petal 115
+    3300042: impatiens petal 116
+    3300044: impatiens petal 117
+    3300046: impatiens petal 118
+    3300048: impatiens petal 119
+    3300050: impatiens petal 12
+    3300052: impatiens petal 120
+    3300054: impatiens petal 121
+    3300056: impatiens petal 122
+    3300058: impatiens petal 123
+    3300060: impatiens petal 124
+    3300062: impatiens petal 125
+    3300064: impatiens petal 126
+    3300066: impatiens petal 127
+    3300068: impatiens petal 128
+    3300070: impatiens petal 129
+    3300072: impatiens petal 13
+    3300074: impatiens petal 130
+    3300076: impatiens petal 131
+    3300078: impatiens petal 132
+    3300080: impatiens petal 133
+    3300082: impatiens petal 134
+    3300084: impatiens petal 135
+    3300086: impatiens petal 136
+    3300088: impatiens petal 137
+    3300090: impatiens petal 138
+    3300092: impatiens petal 139
+    3300094: impatiens petal 14
+    3300096: impatiens petal 140
+    3300098: impatiens petal 141
+    3300100: impatiens petal 142
+    3300102: impatiens petal 143
+    3300104: impatiens petal 144
+    3300106: impatiens petal 145
+    3300108: impatiens petal 146
+    3300110: impatiens petal 147
+    3300112: impatiens petal 148
+    3300114: impatiens petal 149
+    3300116: impatiens petal 15
+    3300118: impatiens petal 150
+    3300120: impatiens petal 151
+    3300122: impatiens petal 152
+    3300124: impatiens petal 153
+    3300126: impatiens petal 154
+    3300128: impatiens petal 155
+    3300130: impatiens petal 156
+    3300132: impatiens petal 157
+    3300134: impatiens petal 158
+    3300136: impatiens petal 159
+    3300138: impatiens petal 16
+    3300140: impatiens petal 160
+    3300142: impatiens petal 161
+    3300144: impatiens petal 162
+    3300146: impatiens petal 163
+    3300148: impatiens petal 164
+    3300150: impatiens petal 165
+    3300152: impatiens petal 166
+    3300154: impatiens petal 167
+    3300156: impatiens petal 168
+    3300158: impatiens petal 169
+    3300160: impatiens petal 17
+    3300162: impatiens petal 170
+    3300164: impatiens petal 171
+    3300166: impatiens petal 172
+    3300168: impatiens petal 173
+    3300170: impatiens petal 174
+    3300172: impatiens petal 175
+    3300174: impatiens petal 176
+    3300176: impatiens petal 177
+    3300178: impatiens petal 178
+    3300180: impatiens petal 179
+    3300182: impatiens petal 18
+    3300184: impatiens petal 180
+    3300186: impatiens petal 181
+    3300188: impatiens petal 182
+    3300190: impatiens petal 183
+    3300192: impatiens petal 184
+    3300194: impatiens petal 185
+    3300196: impatiens petal 186
+    3300198: impatiens petal 187
+    3300200: impatiens petal 188
+    3300202: impatiens petal 189
+    3300204: impatiens petal 19
+    3300206: impatiens petal 190
+    3300208: impatiens petal 191
+    3300210: impatiens petal 192
+    3300212: impatiens petal 193
+    3300214: impatiens petal 194
+    3300216: impatiens petal 195
+    3300218: impatiens petal 196
+    3300220: impatiens petal 197
+    3300222: impatiens petal 198
+    3300224: impatiens petal 199
+    3300226: impatiens petal 2
+    3300228: impatiens petal 20
+    3300230: impatiens petal 200
+    3300232: impatiens petal 201
+    3300234: impatiens petal 202
+    3300236: impatiens petal 203
+    3300238: impatiens petal 21
+    3300240: impatiens petal 22
+    3300242: impatiens petal 23
+    3300244: impatiens petal 24
+    3300246: impatiens petal 25
+    3300248: impatiens petal 26
+    3300250: impatiens petal 27
+    3300252: impatiens petal 28
+    3300254: impatiens petal 29
+    3300256: impatiens petal 3
+    3300258: impatiens petal 30
+    3300260: impatiens petal 31
+    3300262: impatiens petal 32
+    3300264: impatiens petal 33
+    3300266: impatiens petal 34
+    3300268: impatiens petal 35
+    3300270: impatiens petal 36
+    3300272: impatiens petal 37
+    3300274: impatiens petal 38
+    3300276: impatiens petal 39
+    3300278: impatiens petal 4
+    3300280: impatiens petal 40
+    3300282: impatiens petal 41
+    3300284: impatiens petal 42
+    3300286: impatiens petal 43
+    3300288: impatiens petal 44
+    3300290: impatiens petal 45
+    3300292: impatiens petal 46
+    3300294: impatiens petal 47
+    3300296: impatiens petal 48
+    3300298: impatiens petal 49
+    3300300: impatiens petal 5
+    3300302: impatiens petal 50
+    3300304: impatiens petal 51
+    3300306: impatiens petal 52
+    3300308: impatiens petal 53
+    3300310: impatiens petal 54
+    3300312: impatiens petal 55
+    3300314: impatiens petal 56
+    3300316: impatiens petal 57
+    3300318: impatiens petal 58
+    3300320: impatiens petal 59
+    3300322: impatiens petal 6
+    3300324: impatiens petal 60
+    3300326: impatiens petal 61
+    3300328: impatiens petal 62
+    3300330: impatiens petal 63
+    3300332: impatiens petal 64
+    3300334: impatiens petal 65
+    3300336: impatiens petal 66
+    3300338: impatiens petal 67
+    3300340: impatiens petal 68
+    3300342: impatiens petal 69
+    3300344: impatiens petal 7
+    3300346: impatiens petal 70
+    3300348: impatiens petal 71
+    3300350: impatiens petal 72
+    3300352: impatiens petal 73
+    3300354: impatiens petal 74
+    3300356: impatiens petal 75
+    3300358: impatiens petal 76
+    3300360: impatiens petal 77
+    3300362: impatiens petal 78
+    3300364: impatiens petal 79
+    3300366: impatiens petal 8
+    3300368: impatiens petal 80
+    3300370: impatiens petal 81
+    3300372: impatiens petal 82
+    3300374: impatiens petal 83
+    3300376: impatiens petal 84
+    3300378: impatiens petal 85
+    3300380: impatiens petal 86
+    3300382: impatiens petal 87
+    3300384: impatiens petal 88
+    3300386: impatiens petal 89
+    3300388: impatiens petal 9
+    3300390: impatiens petal 90
+    3300392: impatiens petal 91
+    3300394: impatiens petal 92
+    3300396: impatiens petal 93
+    3300398: impatiens petal 94
+    3300400: impatiens petal 95
+    3300402: impatiens petal 96
+    3300404: impatiens petal 97
+    3300406: impatiens petal 98
+    3300408: impatiens petal 99
+    3300410: working leaf
+    3300412: working leaf 1
+    3300414: working leaf 10
+    3300416: working leaf 11
+    3300418: working leaf 12
+    3300420: working leaf 13
+    3300422: working leaf 14
+    3300424: working leaf 15
+    3300426: working leaf 16
+    3300428: working leaf 17
+    3300430: working leaf 18
+    3300432: working leaf 19
+    3300434: working leaf 2
+    3300436: working leaf 20
+    3300438: working leaf 21
+    3300440: working leaf 22
+    3300442: working leaf 23
+    3300444: working leaf 24
+    3300446: working leaf 25
+    3300448: working leaf 26
+    3300450: working leaf 27
+    3300452: working leaf 28
+    3300454: working leaf 29
+    3300456: working leaf 3
+    3300458: working leaf 30
+    3300460: working leaf 31
+    3300462: working leaf 32
+    3300464: working leaf 33
+    3300466: working leaf 4
+    3300468: working leaf 5
+    3300470: working leaf 6
+    3300472: working leaf 7
+    3300474: working leaf 8
+    3300476: working leaf 9
+    4300000: Mesh impatiens petal
+    4300002: Mesh working leaf
+    4300004: Mesh impatiens petal
+    4300006: Mesh FlowerPot
+    4300008: Mesh impatiens petal
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
