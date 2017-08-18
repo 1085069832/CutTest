@@ -21,7 +21,6 @@ public class CutObject : MonoBehaviour
     {
         obj.GetComponent<ShatterTool>().Split(new Plane[] { plane }, out newGameObjects);
         print("newGameObjects" + newGameObjects.Length);
-        AddJoint();
     }
 
     private void AddJoint()
