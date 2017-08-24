@@ -20,42 +20,40 @@ public class HandManager : MonoBehaviour
     {
         get
         {
-            return hand;
+            return GetHand();
         }
     }
 
     /// <summary>
-    /// 获取触碰的手
+    /// 获取手
     /// </summary>
-    /// <param name="other"></param>
-    private void OnTriggerEnter(Collider other)
+    /// <returns></returns>
+    Hand GetHand()
     {
-        if (other.name == "Collider")
+        frame = leapProvider.CurrentFrame;
+        //伸出去的第一只手是0
+        if (isRight)
         {
-            frame = leapProvider.CurrentFrame;
-            //伸出去的第一只手是0
-            if (isRight)
+            if (frame.Hands[0].IsRight)
             {
-                if (frame.Hands[0].IsRight)
-                {
-                    hand = frame.Hands[0];
-                }
-                else
-                {
-                    hand = frame.Hands[1];
-                }
+                hand = frame.Hands[0];
             }
             else
             {
-                if (frame.Hands[0].IsLeft)
-                {
-                    hand = frame.Hands[0];
-                }
-                else
-                {
-                    hand = frame.Hands[1];
-                }
+                hand = frame.Hands[1];
             }
         }
+        else
+        {
+            if (frame.Hands[0].IsLeft)
+            {
+                hand = frame.Hands[0];
+            }
+            else
+            {
+                hand = frame.Hands[1];
+            }
+        }
+        return hand;
     }
 }

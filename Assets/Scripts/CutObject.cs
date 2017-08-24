@@ -17,10 +17,23 @@ public class CutObject : MonoBehaviour
     /// </summary>
     /// <param name="obj"></param>
     /// <param name="plane"></param>
-    public void DoCut(GameObject obj, Plane plane)
+    private void DoCut(GameObject obj, Plane plane)
     {
         obj.GetComponent<ShatterTool>().Split(new Plane[] { plane }, out newGameObjects);
-        print("newGameObjects" + newGameObjects.Length);
+        if (newGameObjects.Length > 1)
+        {
+            print("size1 " + newGameObjects[0].GetComponent<MeshCollider>().bounds.size.magnitude);
+            print("size2 " + newGameObjects[1].GetComponent<MeshCollider>().bounds.size);
+            if (newGameObjects[0].GetComponent<MeshCollider>().bounds.size.magnitude > newGameObjects[1].GetComponent<MeshCollider>().bounds.size.magnitude)
+            {
+                Destroy(newGameObjects[1]);
+            }
+            else
+            {
+                Destroy(newGameObjects[0]);
+            }
+            newGameObjects = null;
+        }
     }
 
     private void AddJoint()
@@ -34,6 +47,7 @@ public class CutObject : MonoBehaviour
 
     private void FixedUpdate()
     {
+        print("1" + isCollider);
         if (isCollider && knifeDirector.IsCanCut)
         {
             Plane plane = new Plane(knife.transform.up, enterPos);

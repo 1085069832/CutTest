@@ -34,7 +34,7 @@ public class KnifeDirector : MonoBehaviour
     void Update()
     {
         Vector3 velocity = handController.handVelocity;
-        if (Vector3.Angle(velocity, knifeTip.right) < 30)
+        if (Vector3.Angle(velocity.normalized, knifeTip.right.normalized) < 30)
         {
             if (velocity.magnitude > knifeVelocity)
             {

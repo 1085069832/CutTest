@@ -9,7 +9,7 @@ public class HandController : MonoBehaviour
     Hand hand;
     KnifeController knifeController;
 
-    private void Start()
+    private void Awake()
     {
         knifeController = GameObject.Find("GameManager").GetComponent<KnifeController>();
     }
@@ -24,7 +24,7 @@ public class HandController : MonoBehaviour
             float grabAngel = hand.PinchStrength;
             if (hand.IsRight)
             {
-                if (grabAngel > 0.7f)
+                if (grabAngel > 0.7)
                 {
                     knifeController.ShowKnife();
                 }
