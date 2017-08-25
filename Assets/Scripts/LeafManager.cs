@@ -40,15 +40,21 @@ public class LeafManager : MonoBehaviour
         if (isCollider)
         {
             DoDrop = false;
-            print("isCollider");
-
         }
         else
         {
             DoDrop = true;
         }
 
-        if (DoDrop && newGameObjectsLists.Count > 0)
+        if (DoDrop)
+        {
+            OnLeafDrop();
+        }
+    }
+
+    public void OnLeafDrop()
+    {
+        if (newGameObjectsLists.Count > 0)
         {
             for (int i = 0; i < newGameObjectsLists.Count; i++)
             {

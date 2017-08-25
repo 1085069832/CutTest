@@ -10,10 +10,27 @@ public class CutObject : MonoBehaviour
     bool isCollider;
     GameObject[] newGameObjects;
     LeafManager leafManager;
+    MainManager mainManager;
 
     private void Awake()
     {
-        leafManager = GameObject.Find("LeafManager").GetComponent<LeafManager>();
+        var gameManager = GameObject.Find("GameManager");
+        leafManager = gameManager.GetComponent<LeafManager>();
+        mainManager = gameManager.GetComponent<MainManager>();
+
+        SaveLeafGo();
+    }
+
+    void SaveLeafGo()
+    {
+        if (transform.parent)
+        {
+            if (transform.parent.tag == "Leaf")
+            {
+                leafManager.newGameObjectsLists.Add(transform.parent.gameObject);
+                transform.parent = null;
+            }
+        }
     }
 
     /// <summary>
@@ -28,15 +45,31 @@ public class CutObject : MonoBehaviour
         //leafManager.newObjects = newGameObjects;
         if (newGameObjects.Length > 1)
         {
-            if (newGameObjects[0].GetComponent<MeshCollider>().bounds.size.magnitude > newGameObjects[1].GetComponent<MeshCollider>().bounds.size.magnitude)
+            if (transform.tag == "Leaf")
             {
-                newGameObjects[1].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                GetOrAddComponent<Rigidbody>(newGameObjects[1]).useGravity = true;
+                if (newGameObjects[0].GetComponent<MeshCollider>().bounds.size.magnitude > newGameObjects[1].GetComponent<MeshCollider>().bounds.size.magnitude)
+                {
+                    newGameObjects[1].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                    GetOrAddComponent<Rigidbody>(newGameObjects[1]).useGravity = true;
+                }
+                else
+                {
+                    newGameObjects[0].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                    GetOrAddComponent<Rigidbody>(newGameObjects[0]).useGravity = true;
+                }
             }
-            else
+            else if (transform.tag == "Main")
             {
-                newGameObjects[0].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                GetOrAddComponent<Rigidbody>(newGameObjects[0]).useGravity = true;
+                //if ((newGameObjects[0].transform.position - mainManager.growTransf.position).magnitude > (newGameObjects[1].transform.position - mainManager.growTransf.position).magnitude)
+                //{
+                //    newGameObjects[0].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                //    GetOrAddComponent<Rigidbody>(newGameObjects[0]).useGravity = true;
+                //}
+                //else
+                //{
+                //    newGameObjects[1].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                //    GetOrAddComponent<Rigidbody>(newGameObjects[1]).useGravity = true;
+                //}
             }
         }
         newGameObjects = null;
@@ -50,8 +83,10 @@ public class CutObject : MonoBehaviour
     {
         for (int i = 0; i < newGameObjects.Length; i++)
         {
-            if (newGameObjects[i].tag == "Leaf")
+            if (newGameObjects[i].tag == "Leaf")//叶子
                 leafManager.newGameObjectsLists.Add(newGameObjects[i]);
+            else if (newGameObjects[i].tag == "Main")
+                mainManager.newGameObjectsLists.Add(newGameObjects[i]);
         }
     }
 
@@ -89,6 +124,8 @@ public class CutObject : MonoBehaviour
             knife.transform.GetComponent<BoxCollider>().isTrigger = true;
             knifeDirector = knife.GetComponentInParent<KnifeDirector>();
             enterPos = collision.contacts[0].point;
+            if (transform.tag == "Main")
+                mainManager.EnterPos = enterPos;
             isCollider = true;
         }
     }
