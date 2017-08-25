@@ -30,6 +30,11 @@ public class KnifeDirector : MonoBehaviour
         handController = transform.parent.GetComponentInChildren<HandController>();
     }
 
+    private void OnEnable()
+    {
+        transform.GetComponentInChildren<BoxCollider>().isTrigger = false;
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -9,8 +9,12 @@ public class CutObject : MonoBehaviour
     KnifeDirector knifeDirector;
     bool isCollider;
     GameObject[] newGameObjects;
-    [SerializeField] Rigidbody rg;
-    [SerializeField] HingeJoint hj;
+    LeafManager leafManager;
+
+    private void Awake()
+    {
+        leafManager = GameObject.Find("LeafManager").GetComponent<LeafManager>();
+    }
 
     /// <summary>
     /// 截取
@@ -20,52 +24,71 @@ public class CutObject : MonoBehaviour
     private void DoCut(GameObject obj, Plane plane)
     {
         obj.GetComponent<ShatterTool>().Split(new Plane[] { plane }, out newGameObjects);
+        AddNewObjsToList(newGameObjects);
+        //leafManager.newObjects = newGameObjects;
         if (newGameObjects.Length > 1)
         {
-            print("size1 " + newGameObjects[0].GetComponent<MeshCollider>().bounds.size.magnitude);
-            print("size2 " + newGameObjects[1].GetComponent<MeshCollider>().bounds.size);
             if (newGameObjects[0].GetComponent<MeshCollider>().bounds.size.magnitude > newGameObjects[1].GetComponent<MeshCollider>().bounds.size.magnitude)
             {
-                Destroy(newGameObjects[1]);
+                newGameObjects[1].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                GetOrAddComponent<Rigidbody>(newGameObjects[1]).useGravity = true;
             }
             else
             {
-                Destroy(newGameObjects[0]);
+                newGameObjects[0].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                GetOrAddComponent<Rigidbody>(newGameObjects[0]).useGravity = true;
             }
-            newGameObjects = null;
+        }
+        newGameObjects = null;
+    }
+
+    /// <summary>
+    /// 添加新物体到list
+    /// </summary>
+    /// <param name="newGameObjects"></param>
+    void AddNewObjsToList(GameObject[] newGameObjects)
+    {
+        for (int i = 0; i < newGameObjects.Length; i++)
+        {
+            if (newGameObjects[i].tag == "Leaf")
+                leafManager.newGameObjectsLists.Add(newGameObjects[i]);
         }
     }
 
-    private void AddJoint()
+    T GetOrAddComponent<T>(GameObject go) where T : Component
     {
-        foreach (GameObject newObject in newGameObjects)
+        if (go.GetComponent<T>())
         {
-            FixedJoint fj = newObject.AddComponent<FixedJoint>();
-            fj.connectedBody = rg;
+            return go.GetComponent<T>();
+        }
+        else
+        {
+            return go.AddComponent<T>();
         }
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        print("1" + isCollider);
-        if (isCollider && knifeDirector.IsCanCut)
+        if (isCollider)
         {
-            Plane plane = new Plane(knife.transform.up, enterPos);
-            DoCut(gameObject, plane);
-            knifeDirector.IsCanCut = false;
-            isCollider = false;
-            knife.GetComponent<BoxCollider>().isTrigger = false;
+            if (knifeDirector.IsCanCut)
+            {
+                Plane plane = new Plane(knife.transform.up, enterPos);
+                DoCut(gameObject, plane);
+                knifeDirector.IsCanCut = false;
+                knife.transform.GetComponent<BoxCollider>().isTrigger = false;
+            }
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.name == "KnifeBlade")
+        if (!isCollider && collision.transform.name == "KnifeBlade")
         {
             knife = collision.gameObject;
+            knife.transform.GetComponent<BoxCollider>().isTrigger = true;
             knifeDirector = knife.GetComponentInParent<KnifeDirector>();
             enterPos = collision.contacts[0].point;
-            knife.transform.GetComponent<BoxCollider>().isTrigger = true;
             isCollider = true;
         }
     }
