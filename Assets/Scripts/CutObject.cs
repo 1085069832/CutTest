@@ -2,6 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Hy
+{
+    Count0,
+    Count1,
+    Count2,
+    Count3,
+    Count4,
+    Count5
+}
+
 public class CutObject : MonoBehaviour
 {
     Vector3 enterPos;
@@ -11,14 +21,43 @@ public class CutObject : MonoBehaviour
     GameObject[] newGameObjects;
     LeafManager leafManager;
     MainManager mainManager;
+    public Hy hy;
 
     private void Awake()
     {
-        var gameManager = GameObject.Find("GameManager");
-        leafManager = gameManager.GetComponent<LeafManager>();
-        mainManager = gameManager.GetComponent<MainManager>();
+        FindPlantManager();
 
         SaveLeafGo();
+    }
+
+    void FindPlantManager()
+    {
+        GameObject plantManager = null;
+
+        switch (hy)
+        {
+            case Hy.Count0:
+                plantManager = GameObject.Find("PlantManagers/PlantManager0");
+                break;
+            case Hy.Count1:
+                plantManager = GameObject.Find("PlantManagers/PlantManager1");
+                break;
+            case Hy.Count2:
+                plantManager = GameObject.Find("PlantManagers/PlantManager2");
+                break;
+            case Hy.Count3:
+                plantManager = GameObject.Find("PlantManagers/PlantManager3");
+                break;
+            case Hy.Count4:
+                plantManager = GameObject.Find("PlantManagers/PlantManager4");
+                break;
+            case Hy.Count5:
+                plantManager = GameObject.Find("PlantManagers/PlantManager5");
+                break;
+        }
+
+        leafManager = plantManager.GetComponent<LeafManager>();
+        mainManager = plantManager.GetComponent<MainManager>();
     }
 
     void SaveLeafGo()
@@ -42,7 +81,6 @@ public class CutObject : MonoBehaviour
     {
         obj.GetComponent<ShatterTool>().Split(new Plane[] { plane }, out newGameObjects);
         AddNewObjsToList(newGameObjects);
-        //leafManager.newObjects = newGameObjects;
         if (newGameObjects.Length > 1)
         {
             if (transform.tag == "Leaf")
@@ -60,19 +98,28 @@ public class CutObject : MonoBehaviour
             }
             else if (transform.tag == "Main")
             {
-                //if ((newGameObjects[0].transform.position - mainManager.growTransf.position).magnitude > (newGameObjects[1].transform.position - mainManager.growTransf.position).magnitude)
-                //{
-                //    newGameObjects[0].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                //    GetOrAddComponent<Rigidbody>(newGameObjects[0]).useGravity = true;
-                //}
-                //else
-                //{
-                //    newGameObjects[1].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                //    GetOrAddComponent<Rigidbody>(newGameObjects[1]).useGravity = true;
-                //}
+                if ((newGameObjects[0].GetComponent<Renderer>().bounds.center - mainManager.growTransf.position).magnitude > (newGameObjects[1].GetComponent<Renderer>().bounds.center - mainManager.growTransf.position).magnitude)
+                {
+                    newGameObjects[0].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                    GetOrAddComponent<Rigidbody>(newGameObjects[0]).useGravity = true;
+
+                    if (leafManager.raycastHit.transform)
+                    {
+                        newGameObjects[0].AddComponent<FixedJoint>().connectedBody = leafManager.raycastHit.transform.GetComponent<Rigidbody>();
+                    }
+                }
+                else
+                {
+                    newGameObjects[1].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                    GetOrAddComponent<Rigidbody>(newGameObjects[1]).useGravity = true;
+
+                    if (leafManager.raycastHit.transform)
+                    {
+                        newGameObjects[1].AddComponent<FixedJoint>().connectedBody = leafManager.raycastHit.transform.GetComponent<Rigidbody>();
+                    }
+                }
             }
         }
-        newGameObjects = null;
     }
 
     /// <summary>

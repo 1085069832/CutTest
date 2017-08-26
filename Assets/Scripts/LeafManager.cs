@@ -7,7 +7,7 @@ public class LeafManager : MonoBehaviour
     [SerializeField] Transform startPos;
     [SerializeField] Transform endPos;
     LayerMask layerMask;
-    RaycastHit raycastHit;
+    public RaycastHit raycastHit;
     bool doDrop;//是否掉落
     [HideInInspector]
     public List<GameObject> newGameObjectsLists = new List<GameObject>();
@@ -65,7 +65,6 @@ public class LeafManager : MonoBehaviour
                 }
             }
             newGameObjectsLists.Clear();
-            print("掉落");
         }
     }
 }

@@ -8,9 +8,7 @@ public class MainManager : MonoBehaviour
     public List<GameObject> newGameObjectsLists = new List<GameObject>();
     LeafManager leafManager;
     public Transform growTransf;
-    [SerializeField] GameObject test;
     Vector3 enterPos;//刀切点
-    GameObject minGo;
 
     public Vector3 EnterPos
     {
@@ -25,12 +23,6 @@ public class MainManager : MonoBehaviour
         leafManager = GetComponent<LeafManager>();
     }
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -38,14 +30,5 @@ public class MainManager : MonoBehaviour
         {
             leafManager.OnLeafDrop();
         }
-
-        //if (test)
-        //    print(test.GetComponent<MeshCollider>().bounds.size.magnitude);
-
-        //if (enterPos != Vector3.zero)
-        //{
-        //    print("切距离" + (enterPos - growTransf.position).magnitude);
-
-        //}
     }
 }
