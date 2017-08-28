@@ -89,11 +89,18 @@ public class CutObject : MonoBehaviour
                 {
                     newGameObjects[1].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                     GetOrAddComponent<Rigidbody>(newGameObjects[1]).useGravity = true;
+                    newGameObjects[1].GetComponent<CutObject>().enabled = false;
+                    newGameObjects[1].GetComponent<ShatterTool>().enabled = false;
+                    newGameObjects[1].GetComponent<TargetUvMapper>().enabled = false;
                 }
                 else
                 {
                     newGameObjects[0].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                     GetOrAddComponent<Rigidbody>(newGameObjects[0]).useGravity = true;
+                    newGameObjects[0].GetComponent<CutObject>().enabled = false;
+                    newGameObjects[0].GetComponent<ShatterTool>().enabled = false;
+                    newGameObjects[0].GetComponent<TargetUvMapper>().enabled = false;
+
                 }
             }
             else if (transform.tag == "Main")
@@ -102,7 +109,9 @@ public class CutObject : MonoBehaviour
                 {
                     newGameObjects[0].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                     GetOrAddComponent<Rigidbody>(newGameObjects[0]).useGravity = true;
-
+                    newGameObjects[0].GetComponent<CutObject>().enabled = false;
+                    newGameObjects[0].GetComponent<ShatterTool>().enabled = false;
+                    newGameObjects[0].GetComponent<TargetUvMapper>().enabled = false;
                     if (leafManager.raycastHit.transform)
                     {
                         newGameObjects[0].AddComponent<FixedJoint>().connectedBody = leafManager.raycastHit.transform.GetComponent<Rigidbody>();
@@ -112,7 +121,9 @@ public class CutObject : MonoBehaviour
                 {
                     newGameObjects[1].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                     GetOrAddComponent<Rigidbody>(newGameObjects[1]).useGravity = true;
-
+                    newGameObjects[1].GetComponent<CutObject>().enabled = false;
+                    newGameObjects[1].GetComponent<ShatterTool>().enabled = false;
+                    newGameObjects[1].GetComponent<TargetUvMapper>().enabled = false;
                     if (leafManager.raycastHit.transform)
                     {
                         newGameObjects[1].AddComponent<FixedJoint>().connectedBody = leafManager.raycastHit.transform.GetComponent<Rigidbody>();

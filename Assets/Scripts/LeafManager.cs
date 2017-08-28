@@ -62,6 +62,10 @@ public class LeafManager : MonoBehaviour
                 {
                     newGameObjectsLists[i].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                     newGameObjectsLists[i].GetComponent<Rigidbody>().useGravity = true;
+                    newGameObjectsLists[i].GetComponent<CutObject>().enabled = false;
+                    newGameObjectsLists[i].GetComponent<ShatterTool>().enabled = false;
+                    newGameObjectsLists[i].GetComponent<TargetUvMapper>().enabled = false;
+
                 }
             }
             newGameObjectsLists.Clear();
