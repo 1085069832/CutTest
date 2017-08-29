@@ -17,7 +17,7 @@ public class HandController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        hand = transform.GetComponent<HandManager>()._hand;
+        hand = GetComponent<HandManager>()._hand;
 
         if (hand != null)
         {
@@ -30,7 +30,10 @@ public class HandController : MonoBehaviour
                 }
                 else
                 {
-                    knifeController.HideKnife();
+                    if (hand.GrabAngle < 2.5)
+                    {
+                        knifeController.HideKnife();
+                    }
                 }
             }
         }

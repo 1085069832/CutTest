@@ -87,31 +87,18 @@ public class CutObject : MonoBehaviour
             {
                 if (newGameObjects[0].GetComponent<MeshCollider>().bounds.size.magnitude > newGameObjects[1].GetComponent<MeshCollider>().bounds.size.magnitude)
                 {
-                    newGameObjects[1].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                    GetOrAddComponent<Rigidbody>(newGameObjects[1]).useGravity = true;
-                    newGameObjects[1].GetComponent<CutObject>().enabled = false;
-                    newGameObjects[1].GetComponent<ShatterTool>().enabled = false;
-                    newGameObjects[1].GetComponent<TargetUvMapper>().enabled = false;
+                    SetGoValue(newGameObjects[1]);
                 }
                 else
                 {
-                    newGameObjects[0].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                    GetOrAddComponent<Rigidbody>(newGameObjects[0]).useGravity = true;
-                    newGameObjects[0].GetComponent<CutObject>().enabled = false;
-                    newGameObjects[0].GetComponent<ShatterTool>().enabled = false;
-                    newGameObjects[0].GetComponent<TargetUvMapper>().enabled = false;
-
+                    SetGoValue(newGameObjects[0]);
                 }
             }
             else if (transform.tag == "Main")
             {
                 if ((newGameObjects[0].GetComponent<Renderer>().bounds.center - mainManager.growTransf.position).magnitude > (newGameObjects[1].GetComponent<Renderer>().bounds.center - mainManager.growTransf.position).magnitude)
                 {
-                    newGameObjects[0].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                    GetOrAddComponent<Rigidbody>(newGameObjects[0]).useGravity = true;
-                    newGameObjects[0].GetComponent<CutObject>().enabled = false;
-                    newGameObjects[0].GetComponent<ShatterTool>().enabled = false;
-                    newGameObjects[0].GetComponent<TargetUvMapper>().enabled = false;
+                    SetGoValue(newGameObjects[0]);
                     if (leafManager.raycastHit.transform)
                     {
                         newGameObjects[0].AddComponent<FixedJoint>().connectedBody = leafManager.raycastHit.transform.GetComponent<Rigidbody>();
@@ -119,11 +106,7 @@ public class CutObject : MonoBehaviour
                 }
                 else
                 {
-                    newGameObjects[1].GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                    GetOrAddComponent<Rigidbody>(newGameObjects[1]).useGravity = true;
-                    newGameObjects[1].GetComponent<CutObject>().enabled = false;
-                    newGameObjects[1].GetComponent<ShatterTool>().enabled = false;
-                    newGameObjects[1].GetComponent<TargetUvMapper>().enabled = false;
+                    SetGoValue(newGameObjects[1]);
                     if (leafManager.raycastHit.transform)
                     {
                         newGameObjects[1].AddComponent<FixedJoint>().connectedBody = leafManager.raycastHit.transform.GetComponent<Rigidbody>();
@@ -131,6 +114,15 @@ public class CutObject : MonoBehaviour
                 }
             }
         }
+    }
+
+    void SetGoValue(GameObject go)
+    {
+        go.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        GetOrAddComponent<Rigidbody>(go).useGravity = true;
+        go.GetComponent<CutObject>().enabled = false;
+        go.GetComponent<ShatterTool>().enabled = false;
+        go.GetComponent<TargetUvMapper>().enabled = false;
     }
 
     /// <summary>
