@@ -8,6 +8,7 @@ public class HandController : MonoBehaviour
 {
     Hand hand;
     KnifeController knifeController;
+    [HideInInspector] public bool isLeftCanGrab;//左手是否能抓取
 
     private void Awake()
     {
@@ -21,18 +22,34 @@ public class HandController : MonoBehaviour
 
         if (hand != null)
         {
-            float grabAngel = hand.PinchStrength;
+            float pinchStrength = hand.PinchStrength;
+            float grabAngle = hand.GrabAngle;
             if (hand.IsRight)
             {
-                if (grabAngel > 0.7)
+                if (pinchStrength > 0.7)
                 {
                     knifeController.ShowKnife();
                 }
                 else
                 {
-                    if (hand.GrabAngle < 2.5)
+                    if (grabAngle < 2.5)
                     {
                         knifeController.HideKnife();
+                    }
+                }
+            }
+            else if (hand.IsLeft)
+            {
+                if (pinchStrength > 0.7)
+                {
+                    //GameObject.Find("Cube").transform.position = hand.PalmPosition.ToVector3();
+                    isLeftCanGrab = true;
+                }
+                else
+                {
+                    if (grabAngle < 2.5)
+                    {
+                        isLeftCanGrab = false;
                     }
                 }
             }
