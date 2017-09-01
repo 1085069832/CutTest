@@ -25,6 +25,7 @@ public class CutObject : MonoBehaviour
 
     private void Awake()
     {
+
         FindPlantManager();
 
         SaveLeafGo();

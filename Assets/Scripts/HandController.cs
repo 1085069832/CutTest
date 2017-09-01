@@ -8,7 +8,7 @@ public class HandController : MonoBehaviour
 {
     Hand hand;
     KnifeController knifeController;
-    [HideInInspector] public bool isLeftCanGrab;//左手是否能抓取
+    bool isLeftCanGrab;//左手是否能抓取
 
     private void Awake()
     {
@@ -47,10 +47,8 @@ public class HandController : MonoBehaviour
                 }
                 else
                 {
-                    if (grabAngle < 2.5)
-                    {
+                    if (hand.GrabAngle < 2.5)
                         isLeftCanGrab = false;
-                    }
                 }
             }
         }
@@ -82,6 +80,14 @@ public class HandController : MonoBehaviour
         get
         {
             return FingersVelocity();
+        }
+    }
+
+    public bool IsLeftCanGrab
+    {
+        get
+        {
+            return isLeftCanGrab;
         }
     }
 

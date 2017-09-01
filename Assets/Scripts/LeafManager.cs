@@ -69,8 +69,9 @@ public class LeafManager : MonoBehaviour
 
     void SetGoValue(GameObject go)
     {
-        go.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-        go.GetComponent<Rigidbody>().useGravity = true;
+        var rb = go.GetComponent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.None;
+        rb.useGravity = true;
         go.GetComponent<CutObject>().enabled = false;
         go.GetComponent<ShatterTool>().enabled = false;
         go.GetComponent<TargetUvMapper>().enabled = false;
