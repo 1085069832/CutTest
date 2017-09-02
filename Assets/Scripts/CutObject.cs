@@ -22,13 +22,21 @@ public class CutObject : MonoBehaviour
     LeafManager leafManager;
     MainManager mainManager;
     public Hy hy;
+    public bool isStock;
+    Transform stockGrow;
 
-    private void Awake()
+    void Awake()
     {
+        if (!isStock)
+        {
+            FindPlantManager();
 
-        FindPlantManager();
-
-        SaveLeafGo();
+            SaveLeafGo();
+        }
+        else
+        {
+            stockGrow = GameObject.Find("StockManager/GrowPos").transform;
+        }
     }
 
     void FindPlantManager()
@@ -78,10 +86,11 @@ public class CutObject : MonoBehaviour
     /// </summary>
     /// <param name="obj"></param>
     /// <param name="plane"></param>
-    private void DoCut(GameObject obj, Plane plane)
+    void DoCut(GameObject obj, Plane plane)
     {
         obj.GetComponent<ShatterTool>().Split(new Plane[] { plane }, out newGameObjects);
-        AddNewObjsToList(newGameObjects);
+        if (!isStock)
+            AddNewObjsToList(newGameObjects);
         if (newGameObjects.Length > 1)
         {
             if (transform.tag == "Leaf")
@@ -114,6 +123,17 @@ public class CutObject : MonoBehaviour
                     }
                 }
             }
+            else if (transform.tag == "Stock")
+            {
+                if ((newGameObjects[0].GetComponent<Renderer>().bounds.center - stockGrow.position).magnitude > (newGameObjects[1].GetComponent<Renderer>().bounds.center - stockGrow.position).magnitude)
+                {
+                    SetGoValue(newGameObjects[0]);
+                }
+                else
+                {
+                    SetGoValue(newGameObjects[1]);
+                }
+            }
         }
     }
 
@@ -124,6 +144,10 @@ public class CutObject : MonoBehaviour
         go.GetComponent<CutObject>().enabled = false;
         go.GetComponent<ShatterTool>().enabled = false;
         go.GetComponent<TargetUvMapper>().enabled = false;
+        if (isStock)
+        {
+            go.GetComponent<Stock>().enabled = false;
+        }
     }
 
     /// <summary>
@@ -153,21 +177,28 @@ public class CutObject : MonoBehaviour
         }
     }
 
-    private void Update()
+    void Update()
     {
         if (isCollider)
         {
             if (knifeDirector.IsCanCut)
             {
                 Plane plane = new Plane(knife.transform.up, enterPos);
-                DoCut(gameObject, plane);
+                if (!isStock)
+                    DoCut(gameObject, plane);
+                else
+                    if (knifeDirector.StockCanCut(stockGrow))
+                {
+                    DoCut(gameObject, plane);
+                }
+
                 knifeDirector.IsCanCut = false;
                 knife.transform.GetComponent<BoxCollider>().isTrigger = false;
             }
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         if (!isCollider && collision.transform.name == "KnifeBlade")
         {
@@ -181,7 +212,7 @@ public class CutObject : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    void OnCollisionExit(Collision collision)
     {
         if (collision.transform.name == "KnifeBlade")
         {

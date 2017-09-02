@@ -47,4 +47,17 @@ public class KnifeDirector : MonoBehaviour
             }
         }
     }
+
+    /// <summary>
+    /// 是否能切砧木
+    /// </summary>
+    /// <param name="stock"></param>
+    /// <returns></returns>
+    public bool StockCanCut(Transform stock)
+    {
+        if (Vector3.Angle(-stock.up, knifeTip.right.normalized) < 30)
+            return false;
+        else
+            return true;
+    }
 }

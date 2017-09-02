@@ -7,7 +7,6 @@ using UnityEngine;
 /// </summary>
 public class Stock : MonoBehaviour
 {
-    GrabObject grabObject;
     Transform scion;
     bool isEnter;
     RaycastHit raycastHit;
@@ -15,8 +14,9 @@ public class Stock : MonoBehaviour
     Vector3 sphereCastDir;
     LayerMask layerMask;
     float radius = 0.02f;
+    GrabObject grabObject;
 
-    private void Start()
+    void Start()
     {
         layerMask = 1 << LayerMask.NameToLayer("Main");
         sphereCastDir = tip.position - transform.position;
@@ -27,34 +27,21 @@ public class Stock : MonoBehaviour
         if (isEnter)
         {
             bool isCollider = Physics.SphereCast(transform.position, radius, sphereCastDir, out raycastHit, sphereCastDir.magnitude - radius, layerMask);
-
             if (isCollider)
             {
-                grabObject = raycastHit.transform.GetComponent<GrabObject>();
                 if (!grabObject.isGrabing)
                 {
                     if (Vector3.Angle(raycastHit.transform.GetComponent<Renderer>().bounds.center - raycastHit.point, transform.up) < 30)
                     {
-
                         SetRigidbodyFreeze(raycastHit.transform, RigidbodyConstraints.FreezeAll);
+                        isEnter = false;
                     }
                 }
-                else
-                {
-                    //重新抓取
-                    SetRigidbodyFreeze(raycastHit.transform, RigidbodyConstraints.None);
-
-                }
             }
-            else
-            {
-                isEnter = false;
-            }
-
         }
     }
 
-    void SetRigidbodyFreeze(Transform objTransf, RigidbodyConstraints rc)
+    public void SetRigidbodyFreeze(Transform objTransf, RigidbodyConstraints rc)
     {
         objTransf.GetComponent<Rigidbody>().constraints = rc;
         FixedJoint fj = objTransf.GetComponent<FixedJoint>();
@@ -62,12 +49,19 @@ public class Stock : MonoBehaviour
             fj.connectedBody.GetComponent<Rigidbody>().constraints = rc;
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.tag == "Main")
+        if (collision.transform.tag == "Main")
         {
-            if (other.transform.GetComponent<GrabObject>().isGrabing)
+            grabObject = collision.transform.GetComponent<GrabObject>();
+            if (grabObject.isGrabing)
+            {
+                ScionManager scionManager = GameObject.Find("ScionDefPos").GetComponent<ScionManager>();
+                scionManager.grabObj = collision.gameObject;
+                scionManager.stock = gameObject;
                 isEnter = true;
+                GetComponent<MeshCollider>().isTrigger = true;
+            }
         }
     }
 }
