@@ -136,7 +136,7 @@ public class CutObject : MonoBehaviour
         {
             if (newGameObjects[i].tag == "Leaf")//叶子
                 leafManager.newGameObjectsLists.Add(newGameObjects[i]);
-            else if (newGameObjects[i].tag == "Main")
+            else if (newGameObjects[i].tag == "Main")//主干
                 mainManager.newGameObjectsLists.Add(newGameObjects[i]);
         }
     }

@@ -49,7 +49,7 @@ public class GrabObject : MonoBehaviour
             handCenter = rh.transform.Find("palm").Find("HandCenter");
             handController = rh.GetComponentInChildren<HandController>();
             isEnter = true;
-            if (rf && rf.fingerType == Leap.Finger.FingerType.TYPE_THUMB)
+            if (rf && (rf.fingerType == Leap.Finger.FingerType.TYPE_THUMB || rf.fingerType == Leap.Finger.FingerType.TYPE_INDEX))
             {
                 //是否是拇指
                 canGrab = true;

@@ -2,75 +2,72 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 砧木
+/// </summary>
 public class Stock : MonoBehaviour
 {
     GrabObject grabObject;
     Transform scion;
     bool isEnter;
-    Vector3 scionUp;
     RaycastHit raycastHit;
+    [SerializeField] Transform tip;
+    Vector3 sphereCastDir;
+    LayerMask layerMask;
+    float radius = 0.02f;
+
+    private void Start()
+    {
+        layerMask = 1 << LayerMask.NameToLayer("Main");
+        sphereCastDir = tip.position - transform.position;
+    }
 
     void Update()
     {
         if (isEnter)
         {
-            if (!grabObject.isGrabing)
+            bool isCollider = Physics.SphereCast(transform.position, radius, sphereCastDir, out raycastHit, sphereCastDir.magnitude - radius, layerMask);
+
+            if (isCollider)
             {
-                if (Vector3.Angle(scionUp, transform.up) < 30)
+                grabObject = raycastHit.transform.GetComponent<GrabObject>();
+                if (!grabObject.isGrabing)
                 {
-                    SetRigidbodyFreeze(scion, RigidbodyConstraints.FreezeAll);
+                    if (Vector3.Angle(raycastHit.transform.GetComponent<Renderer>().bounds.center - raycastHit.point, transform.up) < 30)
+                    {
+
+                        SetRigidbodyFreeze(raycastHit.transform, RigidbodyConstraints.FreezeAll);
+                    }
+                }
+                else
+                {
+                    //重新抓取
+                    SetRigidbodyFreeze(raycastHit.transform, RigidbodyConstraints.None);
+
                 }
             }
             else
             {
-                //重新抓取
-                SetRigidbodyFreeze(scion, RigidbodyConstraints.None);
+                isEnter = false;
             }
-        }
 
-        if (Physics.SphereCast(transform.position, 0.05f, transform.up, out raycastHit))
-        {
-            print("监测" + raycastHit.point);
         }
-
     }
 
     void SetRigidbodyFreeze(Transform objTransf, RigidbodyConstraints rc)
     {
-        scion.GetComponent<Rigidbody>().constraints = rc;
-        FixedJoint fj = scion.GetComponent<FixedJoint>();
+        objTransf.GetComponent<Rigidbody>().constraints = rc;
+        FixedJoint fj = objTransf.GetComponent<FixedJoint>();
         if (fj)
             fj.connectedBody.GetComponent<Rigidbody>().constraints = rc;
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.transform.tag == "Main")
-        {
-            scionUp = (collision.transform.GetComponent<Renderer>().bounds.center - collision.contacts[0].point).normalized;
-            GetComponent<MeshCollider>().isTrigger = true;
-        }
-    }
-
     void OnTriggerEnter(Collider other)
     {
-
         if (other.tag == "Main")
         {
-            grabObject = other.GetComponent<GrabObject>();
-            scion = other.transform;
-            if (grabObject.isGrabing)
+            if (other.transform.GetComponent<GrabObject>().isGrabing)
                 isEnter = true;
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Main")
-        {
-            print("OnTriggerExit");
-            isEnter = false;
-            GetComponent<MeshCollider>().isTrigger = false;
         }
     }
 }
