@@ -18,7 +18,7 @@ public class MainManager : MonoBehaviour
         }
     }
 
-    private void Awake()
+    void Awake()
     {
         leafManager = GetComponent<LeafManager>();
     }

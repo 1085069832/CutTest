@@ -24,13 +24,13 @@ public class KnifeDirector : MonoBehaviour
         }
     }
 
-    private void Start()
+    void Start()
     {
         knifeTip = transform.Find("KnifeTip");
         handController = transform.parent.GetComponentInChildren<HandController>();
     }
 
-    private void OnEnable()
+    void OnEnable()
     {
         transform.GetComponentInChildren<BoxCollider>().isTrigger = false;
     }

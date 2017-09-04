@@ -9,39 +9,84 @@ public class Stock : MonoBehaviour
 {
     Transform scion;
     bool isEnter;
-    RaycastHit raycastHit;
+    RaycastHit raycastHitMain;
+    RaycastHit raycastHitStock;
     [SerializeField] Transform tip;
     Vector3 sphereCastDir;
-    LayerMask layerMask;
-    float radius = 0.02f;
+    LayerMask mainLayerMask;
+    LayerMask stockLayerMask;
+    float radius = 0.02f;//stock粗细
     GrabObject grabObject;
+    bool isGrafting;
+    StockManager stockManager;
+
+    void Awake()
+    {
+        mainLayerMask = 1 << LayerMask.NameToLayer("Main");
+        stockLayerMask = 1 << LayerMask.NameToLayer("Stock");
+        stockManager = GameObject.Find("StockManager").GetComponent<StockManager>();
+    }
 
     void Start()
     {
-        layerMask = 1 << LayerMask.NameToLayer("Main");
         sphereCastDir = tip.position - transform.position;
     }
 
     void Update()
     {
-        if (isEnter)
+        if (stockManager.isCutStock)
         {
-            bool isCollider = Physics.SphereCast(transform.position, radius, sphereCastDir, out raycastHit, sphereCastDir.magnitude - radius, layerMask);
-            if (isCollider)
+            bool isMain = Physics.SphereCast(transform.position, radius, sphereCastDir, out raycastHitMain, sphereCastDir.magnitude - radius, mainLayerMask);
+
+            if (isMain)
             {
-                if (!grabObject.isGrabing)
+                if (!isGrafting)
                 {
-                    if (Vector3.Angle(raycastHit.transform.GetComponent<Renderer>().bounds.center - raycastHit.point, transform.up) < 30)
+                    GetComponent<MeshCollider>().isTrigger = true;
+                    var main = raycastHitMain.transform;
+                    var mainCenter = main.GetComponent<Renderer>().bounds.center;
+                    var dir = raycastHitMain.point - mainCenter;
+                    Ray ray = new Ray(mainCenter, dir);
+                    bool isStock = Physics.Raycast(ray, out raycastHitStock, dir.magnitude - 0.01f, stockLayerMask);
+
+                    if (isStock)
                     {
-                        SetRigidbodyFreeze(raycastHit.transform, RigidbodyConstraints.FreezeAll);
+                        if (Vector3.Angle(raycastHitMain.transform.GetComponent<Renderer>().bounds.center - raycastHitMain.point, transform.up) < 30)
+                        {
+                            grabObject = raycastHitMain.transform.GetComponent<GrabObject>();
+                            if (!grabObject.isGrabing)
+                            {
+                                if (isEnter)
+                                {
+                                    SetRigidbodyFreeze(raycastHitMain.transform, RigidbodyConstraints.FreezeAll);
+                                    isGrafting = true;
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
                         isEnter = false;
                     }
+                }
+            }
+            else
+            {
+                GetComponent<MeshCollider>().isTrigger = false;
+            }
+
+            if (isMain && isGrafting)
+            {
+                if (grabObject.isGrabing)//重新抓取
+                {
+                    SetRigidbodyFreeze(raycastHitMain.transform, RigidbodyConstraints.None);
+                    isGrafting = false;
                 }
             }
         }
     }
 
-    public void SetRigidbodyFreeze(Transform objTransf, RigidbodyConstraints rc)
+    void SetRigidbodyFreeze(Transform objTransf, RigidbodyConstraints rc)
     {
         objTransf.GetComponent<Rigidbody>().constraints = rc;
         FixedJoint fj = objTransf.GetComponent<FixedJoint>();
@@ -49,18 +94,13 @@ public class Stock : MonoBehaviour
             fj.connectedBody.GetComponent<Rigidbody>().constraints = rc;
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.transform.tag == "Main")
+        if (other.tag == "Main")
         {
-            grabObject = collision.transform.GetComponent<GrabObject>();
-            if (grabObject.isGrabing)
+            if (other.GetComponent<GrabObject>().isGrabing)
             {
-                ScionManager scionManager = GameObject.Find("ScionDefPos").GetComponent<ScionManager>();
-                scionManager.grabObj = collision.gameObject;
-                scionManager.stock = gameObject;
                 isEnter = true;
-                GetComponent<MeshCollider>().isTrigger = true;
             }
         }
     }

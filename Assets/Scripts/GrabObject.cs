@@ -5,36 +5,60 @@ using UnityEngine;
 
 public class GrabObject : MonoBehaviour
 {
-    float force = 40;
+    float force = 50;
     bool canGrab;
     HandController handController;
-    bool isEnter;
     FixedJoint fj;
     Transform handCenter;
     [HideInInspector] public bool isGrabing;
 
     void Update()
     {
-        if (canGrab && handController.IsLeftCanGrab)
+        if (handController)
         {
-            //抓取
+            if (canGrab && handController.IsLeftCanGrab)
+            {
+                //抓取
+                DoGrab(true, handController);
+            }
+
+            if (!handController.IsLeftCanGrab)
+            {
+                //断开
+                DoGrab(false, handController);
+            }
+        }
+
+    }
+
+    /// <summary>
+    /// 抓取和丢弃
+    /// </summary>
+    /// <param name="isGrab"></param>
+    /// <param name="handController"></param>
+    void DoGrab(bool isGrab, HandController handController)
+    {
+        if (isGrab)
+        {
             if (!fj)
             {
                 fj = gameObject.AddComponent<FixedJoint>();
                 fj.connectedBody = handCenter.gameObject.GetComponent<Rigidbody>();
                 isGrabing = true;
+                SetGrabObjTrigger(true);
+                handController.CurrentIsGrabing = true;
             }
         }
-
-        if (isEnter && !handController.IsLeftCanGrab)
+        else
         {
-            //断开
             if (fj)
             {
                 Destroy(fj);
-                isEnter = false;
                 isGrabing = false;
                 canGrab = false;
+                handController.IsLeftCanGrab = false;
+                handController.CurrentIsGrabing = false;
+                SetGrabObjTrigger(false);
             }
         }
     }
@@ -48,11 +72,15 @@ public class GrabObject : MonoBehaviour
         {
             handCenter = rh.transform.Find("palm").Find("HandCenter");
             handController = rh.GetComponentInChildren<HandController>();
-            isEnter = true;
-            if (rf && (rf.fingerType == Leap.Finger.FingerType.TYPE_THUMB || rf.fingerType == Leap.Finger.FingerType.TYPE_INDEX))
+
+            if (handController.IsLeftCanGrab && !handController.CurrentIsGrabing)
             {
-                //是否是拇指
-                canGrab = true;
+                if (rf && (rf.fingerType == Leap.Finger.FingerType.TYPE_THUMB || rf.fingerType == Leap.Finger.FingerType.TYPE_INDEX || rf.fingerType == Leap.Finger.FingerType.TYPE_MIDDLE))
+                {
+                    //是否是拇指
+                    canGrab = true;
+                }
+
             }
 
             if (!canGrab)
@@ -67,5 +95,21 @@ public class GrabObject : MonoBehaviour
     void AddForceForHand(Vector3 handVelocity)
     {
         GetComponent<Rigidbody>().AddForce(handVelocity * GetComponent<Rigidbody>().mass * force, ForceMode.Force);
+    }
+
+    /// <summary>
+    /// 抓取后obj trigger
+    /// </summary>
+    /// <param name="isTrigger"></param>
+    void SetGrabObjTrigger(bool isTrigger)
+    {
+        GetComponent<MeshCollider>().isTrigger = isTrigger;
+        var fj = GetComponent<FixedJoint>();
+        if (fj)
+        {
+            var meshCollider = fj.connectedBody.GetComponent<MeshCollider>();
+            if (meshCollider)
+                meshCollider.isTrigger = isTrigger;
+        }
     }
 }

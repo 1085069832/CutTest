@@ -24,6 +24,7 @@ public class CutObject : MonoBehaviour
     public Hy hy;
     public bool isStock;
     Transform stockGrow;
+    StockManager stockManager;
 
     void Awake()
     {
@@ -36,6 +37,7 @@ public class CutObject : MonoBehaviour
         else
         {
             stockGrow = GameObject.Find("StockManager/GrowPos").transform;
+            stockManager = GameObject.Find("StockManager").GetComponent<StockManager>();
         }
     }
 
@@ -106,25 +108,28 @@ public class CutObject : MonoBehaviour
             }
             else if (transform.tag == "Main")
             {
+                var leaf = leafManager.raycastHit.transform;
+
                 if ((newGameObjects[0].GetComponent<Renderer>().bounds.center - mainManager.growTransf.position).magnitude > (newGameObjects[1].GetComponent<Renderer>().bounds.center - mainManager.growTransf.position).magnitude)
                 {
                     SetGoValue(newGameObjects[0]);
-                    if (leafManager.raycastHit.transform)
+                    if (leaf)
                     {
-                        newGameObjects[0].AddComponent<FixedJoint>().connectedBody = leafManager.raycastHit.transform.GetComponent<Rigidbody>();
+                        newGameObjects[0].AddComponent<FixedJoint>().connectedBody = leaf.GetComponent<Rigidbody>();
                     }
                 }
                 else
                 {
                     SetGoValue(newGameObjects[1]);
-                    if (leafManager.raycastHit.transform)
+                    if (leaf)
                     {
-                        newGameObjects[1].AddComponent<FixedJoint>().connectedBody = leafManager.raycastHit.transform.GetComponent<Rigidbody>();
+                        newGameObjects[1].AddComponent<FixedJoint>().connectedBody = leaf.GetComponent<Rigidbody>();
                     }
                 }
             }
             else if (transform.tag == "Stock")
             {
+                stockManager.isCutStock = true;
                 if ((newGameObjects[0].GetComponent<Renderer>().bounds.center - stockGrow.position).magnitude > (newGameObjects[1].GetComponent<Renderer>().bounds.center - stockGrow.position).magnitude)
                 {
                     SetGoValue(newGameObjects[0]);

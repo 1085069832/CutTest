@@ -9,8 +9,9 @@ public class HandController : MonoBehaviour
     Hand hand;
     KnifeController knifeController;
     bool isLeftCanGrab;//左手是否能抓取
+    bool currentIsGrabing;//当前是否在抓取
 
-    private void Awake()
+    void Awake()
     {
         knifeController = GameObject.Find("GameManager").GetComponent<KnifeController>();
     }
@@ -89,9 +90,27 @@ public class HandController : MonoBehaviour
         {
             return isLeftCanGrab;
         }
+
+        set
+        {
+            isLeftCanGrab = value;
+        }
     }
 
-    private Vector3 FingersVelocity()
+    public bool CurrentIsGrabing
+    {
+        get
+        {
+            return currentIsGrabing;
+        }
+
+        set
+        {
+            currentIsGrabing = value;
+        }
+    }
+
+    Vector3 FingersVelocity()
     {
         if (hand != null)
         {

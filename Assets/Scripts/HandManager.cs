@@ -11,7 +11,7 @@ public class HandManager : MonoBehaviour
     Hand hand;
     [SerializeField] bool isRight;
 
-    private void Awake()
+    void Awake()
     {
         leapProvider = FindObjectOfType<LeapProvider>() as LeapProvider;
     }
