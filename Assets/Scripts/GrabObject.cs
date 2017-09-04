@@ -77,10 +77,11 @@ public class GrabObject : MonoBehaviour
             {
                 if (rf && (rf.fingerType == Leap.Finger.FingerType.TYPE_THUMB || rf.fingerType == Leap.Finger.FingerType.TYPE_INDEX || rf.fingerType == Leap.Finger.FingerType.TYPE_MIDDLE))
                 {
-                    //是否是拇指
-                    canGrab = true;
+                    if (other.name == "bone3")
+                    {
+                        canGrab = true;
+                    }
                 }
-
             }
 
             if (!canGrab)

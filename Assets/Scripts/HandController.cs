@@ -41,7 +41,7 @@ public class HandController : MonoBehaviour
             }
             else if (hand.IsLeft)
             {
-                if (pinchStrength > 0.7)
+                if (pinchStrength > 0.6)
                 {
                     //GameObject.Find("Cube").transform.position = hand.PalmPosition.ToVector3();
                     isLeftCanGrab = true;

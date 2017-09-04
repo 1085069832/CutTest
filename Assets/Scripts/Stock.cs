@@ -7,8 +7,7 @@ using UnityEngine;
 /// </summary>
 public class Stock : MonoBehaviour
 {
-    Transform scion;
-    bool isEnter;
+    bool isEnter;//是否碰撞
     RaycastHit raycastHitMain;
     RaycastHit raycastHitStock;
     [SerializeField] Transform tip;
