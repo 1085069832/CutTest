@@ -28,7 +28,6 @@ public class GrabObject : MonoBehaviour
                 DoGrab(false, handController);
             }
         }
-
     }
 
     /// <summary>

@@ -152,6 +152,7 @@ public class CutObject : MonoBehaviour
         if (isStock)
         {
             go.GetComponent<Stock>().enabled = false;
+            go.AddComponent<GrabObject>();
         }
     }
 
